@@ -1,0 +1,58 @@
+.skill-card{
+    &-box{
+        & > * {
+            padding: 2rem 4rem;
+        }
+    }
+    &__title{
+        &-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & > * {
+                font-size: 3.4rem;
+            }
+            &--accent{
+                background-color: #C791A2;
+                color: #5A4454;
+            }
+            &--primary{
+                background-color: #94AEC7;
+                color: #4A617F;
+            }
+            // &--semantic-a{
+                
+            // }
+            &--semantic-b{
+                background-color: #A889C5;
+                color: #59447C;
+            }
+        }
+    }
+    &__content{
+        &-box{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 2rem 4rem;
+            height: 25rem;
+            &--accent{
+                background-color: $color-accent-3;
+            }
+            &--primary{
+                background-color: $color-primary-3;
+            }
+            &--semantic-b{
+                background-color: $color-semantic-b-3;
+            }
+        }
+    }
+
+    &__list{
+        color: #fff;
+        &-item{
+            font-size: 2.4rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+    }
+}

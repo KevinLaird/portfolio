@@ -1,0 +1,24 @@
+.bar{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &--red{
+        &-1{
+            background-image: url(../assets/design/bar/red/1.png);
+        }
+        &-2{
+            background-image: url(../assets/design/bar/red/2.png);
+        } 
+    }
+    &--blue{
+        &-1{
+            color: #fff;
+            background-image: url(../assets/design/bar/blue/1.png);
+        }
+        &-2{
+            color: #fff;
+            background-image: url(../assets/design/bar/blue/2.png);
+        } 
+    }
+}

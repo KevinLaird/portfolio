@@ -1,0 +1,126 @@
+.contact{
+    @include color-gradient-primary-2;
+    padding: 10rem 25rem;
+    color: $color-grey-a-1;
+    @include respond(lg){
+        padding: 7rem 14rem;
+    }
+    @include respond(md){
+        padding: 7rem;
+    }
+    @include respond(sm){
+        padding: 0;
+    }
+    &__box{
+        background-color: #fff;
+        padding: 9.6rem;
+        padding-bottom: 4rem;
+        border: 10px solid;
+        border-image-source: linear-gradient(139.74deg, rgba($color-primary-4, 0) 0%, #5B83AA 103.2%);
+        border-image-slice: 1;
+        @include respond(md){
+            padding: 6rem 4rem 4rem;
+        }
+        &--title{
+            margin-bottom: 6rem;
+            
+            & > * {
+                text-align: center;
+            }
+        }
+    }
+    &--title{
+        @include respond(xs){
+            font-size: 5.2rem;
+        }
+    }
+    &--subtitle{
+        @include respond(xs){
+            font-size: 2.6rem;
+        }
+    }
+    &__form{
+        &-grid{
+            display: grid;
+            grid-column-gap: 4rem;
+            grid-row-gap: 2rem;
+        }
+        &-input{
+            font-family: inherit;
+            font-size: 2.4rem;
+            color: $color-grey-a-1;;
+            padding: 2rem 0;
+            border: none;
+            border-bottom: 3px solid $color-grey-a-1;
+            width: 100%;
+            display: block;
+            transition: all .3s;
+            @include respond(xs){
+                font-size: 3.2rem;
+            }
+            &:focus{
+                outline: none;
+                border-bottom: 3px solid $color-primary-1;
+                &:invalid{
+                    border-bottom: 3px solid $color-semantic-a-1;
+                }
+            }
+        }
+
+        &-group{
+            &--grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+                grid-gap: 4rem;
+            }
+        }
+
+        &-input:placeholder-shown + &-label{
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4rem);
+        }
+
+        &-control{
+            line-height: 1.6;
+        }
+
+        &-message{
+            height: 22rem;
+            @include respond(xs){
+                height: 36rem;
+            }
+        }
+
+        &-label{
+            transition: all .2s;
+            margin-top: .7rem;
+            display: block;
+        }
+        &-btn{
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            animation: moveInBottom 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.75s;
+            animation-fill-mode: backwards;
+            @include respond(xs){
+                font-size: 4.2rem;
+            }
+        }
+        &-send{
+            padding: 1.8rem 0;
+            width: 22rem;
+            text-align: center;
+
+            @include respond(xs){
+                padding: 2.8rem 0;
+                width: 100%;
+            }
+            &-text{
+                margin-right: 2rem;
+            }
+        }
+    }
+}

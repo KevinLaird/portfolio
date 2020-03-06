@@ -1,0 +1,14 @@
+.title{
+    &__section{
+        &--title{
+            padding-left: 2rem;
+            border-left: solid #fff 6px;
+
+            &-box{
+                padding-top: 4rem;
+            margin-left: 4rem;
+            margin-top: 4rem;
+            }
+        }
+    }
+}

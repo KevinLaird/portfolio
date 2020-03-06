@@ -1,0 +1,31 @@
+.profile{
+    &-box{
+        position: relative;
+        width: 30rem;
+        height: 30rem;
+    }
+
+    &__background{
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        z-index: -1;
+        transform: rotate(-10deg);
+        &--primary{
+            @include color-gradient-primary-1;
+            clip-path: polygon(100% 0, 100% 59%, 50% 50%, 85% 100%, 0 100%, 0 0);
+        }
+    }
+
+    &__img{
+        border-radius: 50%;
+        
+        
+        &--me{
+            width: 27rem;
+            height: 27rem;
+        }
+    }
+
+}

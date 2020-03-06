@@ -1,0 +1,54 @@
+.projects{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 2.3rem 2.7rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // &--title{}
+
+    &__button-box{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__list{
+        list-style-type: none;
+        &--title{
+            width: 16.2rem;
+            height: 15.9rem;
+            & > * {
+                line-height: 2;
+            }
+            
+        }
+
+        &--content{
+            margin: 1rem 0;
+            & > * {
+                margin-bottom: 2rem;
+            }
+        }
+
+        // &-item{}
+    }
+
+    &--red{
+        background-image: url(../assets/design/card/cardBG-red.png);
+    }
+    &--blue{
+        background-image: url(../assets/design/card/cardBG-blue.png);
+    }
+}
+
+.read-time{
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    text-align: right;
+}

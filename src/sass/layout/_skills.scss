@@ -1,0 +1,8 @@
+.skills{
+    padding-top: 0;
+    &__layout{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-gap: 4rem;
+    }
+}

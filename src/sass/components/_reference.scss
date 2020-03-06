@@ -1,0 +1,32 @@
+.reference{
+    &-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        grid-column-gap: 2.5rem;
+        padding: 4rem;
+        margin-bottom: 4rem;
+    }
+    &__item{
+        & > * {
+            margin-bottom: 2rem;
+        }
+        &--profile{
+            display: flex;
+            &-img{
+                border-radius: 200rem;
+                border: solid #fff 3px;
+                height: 7rem;
+                width: 7rem;
+            }
+        }
+        &--title{
+            &-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 2rem;
+            }
+        }
+        // &--subtitle{}
+    }
+}

@@ -1,0 +1,51 @@
+.link-btn, 
+.link-btn:focus,
+.link-btn:active{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.link-btn{
+    padding: 1.2rem 2rem;
+    width: 100%;
+    transition: all .2s;
+    &--primary-1{
+        background-color: $color-primary-3;
+        &:hover{
+            background-color: $color-primary-4;
+            color: $color-grey-a-1;
+        }
+    }
+    &--primary-2{
+        background-color: $color-primary-1;
+        &:hover{
+            background-color: $color-primary-3;
+            color: $color-primary-1;
+        }
+    }
+    &--accent-1{
+        background-color: $color-accent-3;
+        &:hover{
+            background-color: $color-accent-4;
+            color: $color-grey-a-1;
+        }
+    }
+
+    &--accent-2{
+        color: #fff;
+        background-color: $color-accent-1;
+        &:hover{
+            background-color: $color-accent-2;
+            color: $color-grey-a-1;
+        }
+    }
+
+    &__icon{
+        &-padding{
+            &--sm{
+                padding: 0 0 0 2rem;
+            }
+        }
+    }
+}

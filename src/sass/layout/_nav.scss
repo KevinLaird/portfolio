@@ -1,0 +1,113 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primary-1;
+    position: sticky;
+    z-index: 20000;
+    top: 0;
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        &:last-child{
+            margin-right: 6rem;
+            @include respond(md){
+                margin-right: 2rem;
+            }
+        }
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+    }
+
+    &__link{
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        padding: 1.6rem 3rem;
+        transition: all .2s;
+        @include respond(md){
+            padding: 1.6rem 2rem;
+            font-size: 2.2rem;
+        }
+        @include respond(xs){
+            padding: 1.6rem 2rem;
+        }
+        &:hover{
+            background-color: $color-primary-3;
+            color: $color-grey-a-1;
+        }
+
+
+        &-dropdown{
+            cursor: pointer;
+            text-decoration: none;
+            background-color: inherit;
+            letter-spacing: inherit;
+            border: none;
+            line-height: inherit;
+            
+        }
+        &:hover{
+            transform: translateY(0);
+            color: $color-primary-1;
+        }
+        &:focus,
+        &:active{
+            outline: none;
+            transform: translateY(0);
+            color: $color-primary-1;
+            background-color: $color-primary-3;
+        }
+        
+    }
+
+    &__copyright{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 5rem;
+        top: 1.7rem;
+        color: #fff;
+        @include respond(xs){
+            left: 3rem;
+        }
+        &-special{
+            color: $color-accent-4;
+        }
+    }
+}
+
+.dropdown{
+    &__content{
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        top: 100%;
+        width: 100%;
+
+    }
+    &__link{
+        display: block;
+        transition: all .4s;
+        border-radius: 0;
+        color: #fff;
+        text-decoration: none;
+        font-size: 2.4rem;
+        padding: 1.6rem 3rem;
+        @include respond(md){
+            font-size: 1.7rem;
+        }
+        &:hover{
+            box-shadow: none;
+            transform: translateY(0);
+
+        }
+    }
+}
+
+.show{
+    display:block;
+}
