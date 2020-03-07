@@ -1,15 +1,31 @@
 .projects{
-    margin: 4rem;
+    margin: 0 4rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     grid-gap: 1.5rem;
+    &__links{
+        @include button-reset;
+        font-size: 3.6rem;
+        margin: 3rem 7.5rem;
+        border-bottom: solid 3px transparent;
+        transition: all .2s;
+        &:hover{
+            cursor: pointer;
+            border-bottom: 3px solid $color-grey-a-1;
+        }
+
+        &-box{
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 .project-card{
     display: flex;
     flex-direction: column;
     color: $color-grey-a-1;
-    padding: 2.3rem 2.7rem;
+    padding: 3.6rem 4.8rem;
     box-shadow: $shadows-4;
     position: relative;
     height: 100%;
@@ -60,16 +76,14 @@
     }   
 
     &__exit{
+        @include button-reset;
         height: 3.5rem;
         width: 3.5rem;
         position: absolute;
         border: none;
-        outline: none;
-        text-decoration: none;
         top: 1rem;
         right: -29rem;
         z-index: 2;
-        background: none;
         background-image: url(../../assets/design/Exit/Exit.svg);
         &:hover{
             cursor: pointer;

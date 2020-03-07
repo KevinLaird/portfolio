@@ -83,3 +83,19 @@
 @mixin color-gradient-semantic-1{ background: linear-gradient(135.15deg, $color-accent-1 3.75%, rgba($color-accent-4, 0) 96.5%); }
 @mixin color-gradient-semantic-1--reverse{ background: linear-gradient(135.15deg, $color-accent-1 3.75%, rgba($color-accent-4, 0) 96.5%); }
 @mixin color-gradient-semantic-2{ background: linear-gradient(139.74deg, $color-accent-1 0%, $color-accent-4 103.2%); }
+
+
+
+//Button reset
+@mixin button-reset{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    line-height: auto;
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+    background: none;
+}
