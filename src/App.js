@@ -13,9 +13,6 @@ function App() {
         <Sources />
         <section className="projects">
           <Project />
-          <Project />
-          <Project />
-          <Project />
         </section>
 
         <section className="references">
