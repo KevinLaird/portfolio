@@ -11,12 +11,12 @@ export class navbar extends Component {
                 </div>
                 <ul className="nav__list">
                     <li className="nav__item">
-                        <a href='./pages/contact.html' className="nav__link h2">
+                        <a href='/' className="nav__link h2">
                             Contact
                         </a>
                     </li>
                     <li className="nav__item">
-                        <a href='./pages/about.html' className=" nav__link h2">
+                        <a href='/' className=" nav__link h2">
                             About
                         </a>
                     </li>

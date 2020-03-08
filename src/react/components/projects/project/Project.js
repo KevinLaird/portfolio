@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 export class project extends Component {
-    
     render() {
         const project = this.props.projects;
         return (
@@ -21,15 +20,15 @@ export class project extends Component {
                         </li>
                         <li className="project-card__list-item">
                             <h3 className="h3">Task:</h3>
-                            <p className="body-2"><strong>Task:</strong> {project[0].task}</p>
+                            <p className="body-2">{project[0].task}</p>
                         </li>
                         <li className="project-card__list-item">
                             <h3 className="h3">Action</h3>
-                            <p className="body-2"><strong>Action:</strong> {project[0].action}</p>
+                            <p className="body-2"> {project[0].action}</p>
                         </li>
                         <li className="project-card__list-item">
                             <h3 className="h3">Result</h3>
-                            <p className="body-2"><strong>Result:</strong>{project[0].result}</p>
+                            <p className="body-2">{project[0].result}</p>
                         </li>
                     </ul>
                     <button className="project-card__exit"></button>

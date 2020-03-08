@@ -2,13 +2,10 @@ import React, { Component } from 'react'
 
 export class Projects extends Component {
     render() {
-        return (
-            <div className="projects__links-box">
-                <button className="projects__links">Wing Luke</button>
-                <button className="projects__links">IntroSpect</button>
-                <button className="projects__links">SEED</button>
-                <button className="projects__links">Corpromise</button>
-            </div>
+        const project = this.props.projects;
+        return project.map((project) => (
+            <button key={project.id} className="projects__links"><p className="projects__links--content">{project.title}</p></button>
+            )
         )
     }
 }

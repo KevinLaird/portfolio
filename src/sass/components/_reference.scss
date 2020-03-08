@@ -1,7 +1,7 @@
 .reference{
     &-box{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         grid-column-gap: 2.5rem;
         padding: 4rem;
         margin-bottom: 4rem;
@@ -29,4 +29,8 @@
         }
         // &--subtitle{}
     }
+}
+
+.references{
+    margin: 0 4rem;
 }

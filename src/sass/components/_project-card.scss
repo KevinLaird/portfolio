@@ -6,19 +6,34 @@
     &__links{
         @include button-reset;
         font-size: 3.6rem;
-        margin: 3rem 7.5rem;
-        border-bottom: solid 3px transparent;
-        transition: all .2s;
-        &:hover{
-            cursor: pointer;
-            border-bottom: 3px solid $color-grey-a-1;
+        display: flex;
+        justify-content: center;
+        &--content{
+            color: $color-grey-a-1;
+            border-bottom: solid 3px transparent;
+            transition: all .2s;
+            &:hover{
+                cursor: pointer;
+                border-bottom: 3px solid $color-grey-a-1;
+            }
         }
+        
 
         &-box{
-            display: flex;
-            justify-content: center;
+            margin: 4rem 8rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-column-gap: 7.5rem;
+            grid-row-gap: 3rem;
+        }
+        &--active{
+            border-bottom: 3px solid $color-grey-a-1;
         }
     }
+    &__section{
+        margin-bottom: 4rem;
+    }
+    
 }
 
 .project-card{
@@ -32,7 +47,12 @@
     width: 100%;
     border-left: solid 1rem $color-primary-1;
     border-right: solid 30rem $color-primary-1;
-
+    @include respond(md){
+        border-right: solid 20rem $color-primary-1;
+    }
+    @include respond(xs){
+        border-right: solid 10rem $color-primary-1;
+    }
     &__title{
         &-box{
             margin-bottom: 2rem;
@@ -60,11 +80,13 @@
             & > * {
                 line-height: 2;
             }
-            
         }
 
         &--content{
             margin: 1rem 0;
+            @include respond(sm){
+                margin-bottom: 4rem;
+            }
         }
 
         &-item{
@@ -77,14 +99,25 @@
 
     &__exit{
         @include button-reset;
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 4.5rem;
+        width: 4.5rem;
         position: absolute;
         border: none;
         top: 1rem;
         right: -29rem;
         z-index: 2;
         background-image: url(../../assets/design/Exit/Exit.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: contain;
+        @include respond(md){
+            right: -19rem;
+        }
+        @include respond(xs){
+            height: 6.5rem;
+            width: 6.5rem;
+            right: -8.5rem;
+        }
         &:hover{
             cursor: pointer;
         }
