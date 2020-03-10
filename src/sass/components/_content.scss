@@ -16,7 +16,7 @@
                 font-size: 4.8rem;
             }
             @include respond(xs){
-                font-size: 3.6rem;
+                font-size: 3.2rem;
             }
         }
         &--slash{
@@ -36,7 +36,7 @@
                 font-size: 3.6rem;
             }
             @include respond(xs){
-                font-size: 2.8rem;
+                font-size: 2.4rem;
             }
         }
 
@@ -52,15 +52,19 @@
                 top: -32rem;
                 left: 35rem;
             }
+            @include respond(xs){
+                top: -27.5rem;
+                left: 30rem;
+            }
         }
     }
 
     &__content{
         &-box{
-            height: 100%;
+            height: 50%;
             width: 100%;
             position: relative;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
     }
 
@@ -92,6 +96,11 @@
     &__btn {
         font-size: 2rem;
         padding: 1.6rem 4rem;
+        &-box{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, min-content));
+            grid-gap: 2rem;
+        }
         
     }
 }
