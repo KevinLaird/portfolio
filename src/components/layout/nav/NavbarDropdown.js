@@ -15,7 +15,7 @@ export default class NavbarDropdown extends Component {
                             <i class="fas fa-caret-down dropdown__link-icon"></i>
                     </button>
                     <ul id="dropdown" class="dropdown__content">
-                        {/* <li class="dropdown__item">
+                        <li class="dropdown__item">
                             <Link to="" class="link-btn link-btn--primary-2 dropdown__link h2">Wing Luke</Link>
                         </li>
                         <li class="dropdown__item">
@@ -26,8 +26,9 @@ export default class NavbarDropdown extends Component {
                         </li>
                         <li class="dropdown__item">
                             <Link to="" class="link-btn link-btn--primary-2 dropdown__link h2">Corpromise</Link>
-                        </li> */}
+                        </li>
                     </ul>
+                    
                 </div>
             </li> 
         )

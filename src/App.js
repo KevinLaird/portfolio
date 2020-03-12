@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Home from "./components/directories/Home";
-// import Contact from "./components/directories/Contact";
-// import About from "./components/directories/About";
-// import { Switch, Route } from 'react-router-dom';
+import Contact from "./components/directories/Contact";
+import About from "./components/directories/About";
+import { Switch, Route } from 'react-router-dom';
 
 
 
@@ -12,11 +12,11 @@ class App extends Component {
     return (
       <div className="App">
         <Home />
-        {/* <Switch>
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/about" component={About} />
-        </Switch> */}
+        </Switch>
       </div> 
     );
   }
