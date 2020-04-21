@@ -32,11 +32,9 @@
 
 .education{
     padding: 0 9.5rem 4rem;
-    height: 42rem;
     
     @include respond(lg){
         padding: 0 6.5rem 4rem;
-        height: 50rem;
     }
     @include respond(md){
         padding: 0 4rem 4rem;

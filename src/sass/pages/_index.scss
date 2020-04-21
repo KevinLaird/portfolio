@@ -1,5 +1,6 @@
 .sources{
-    background-color: rgba(#D6E0EA, 20%);
+    background-color: #fff;
+    box-shadow: $shadows-1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 4rem;
