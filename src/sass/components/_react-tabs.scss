@@ -10,12 +10,16 @@
             padding: .6rem 1.6rem;
             &:hover{
                 cursor: pointer;
-                background-color: $color-primary-2;
-                box-shadow: 0 2px 4px rgba($color-primary-2, .2);
-                transform: translateY(-1px);
+                background-color: $color-accent-2;
+                box-shadow: 0 2px 4px rgba($color-accent-2, .2);
+                transform: translateY(-2px);
             }
             &:focus{
-                outline: none;
+                background-color: $color-accent-1;
+                
+            }
+            &:active{
+                transform: translateY(1px);
             }
             &-list{
                 list-style-type: none;
@@ -25,9 +29,14 @@
 
         &__tab{
             &--selected{
-
-                box-shadow: 0 2px 4px rgba($color-primary-2, .2);
-                background-color: $color-primary-2;
+                box-shadow: 0 2px 4px rgba($color-primary-2, .4);
+                background-color: $color-accent-1;
+                transform: translateY(1px);
+                &:hover{
+                    background-color: $color-accent-1;
+                    box-shadow: 0 2px 4px rgba($color-accent-2, .2);
+                    transform: translateY(1px);
+                }
             }
         }
     }

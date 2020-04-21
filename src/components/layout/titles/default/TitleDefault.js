@@ -220,13 +220,12 @@ export default class TitleDefault extends Component {
                         </div>
                         <div className="education-box">
                             <div className="education__title-box">
-                                <h2 className="h1 education__title">Associate in Arts & Sciences</h2>
-                                <h3 className="h3 education__subtitle">Bellevue College | September 2014 - December 2017</h3>
+                                <h2 className="h1 education__title">High School Diploma</h2>
+                                <h3 className="h3 education__subtitle">Hazen High School | September 2011 - June 2015</h3>
                             </div>
                             <div className="education__content-box">
                                 <p className="education__content">
-                                    <strong>Mission:</strong> Create a broad understanding of context in design, a deep understanding in the Liberal Arts, 
-                                    and cultivate a pathway to grow and explore new areas of study. 
+                                    <strong>Mission:</strong> Obtain a general education to provide a clear pathway to a higher education in the field of human computer interaction design.
                                 </p>
                             </div>
                         </div>

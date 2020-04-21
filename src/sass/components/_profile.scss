@@ -5,6 +5,16 @@
         width: 30rem;
         height: 30rem;
         display: flex;
+        transition: rotate .8s;
+        &:hover .profile__background{
+            transform: 
+                rotate(360deg)
+                scale(1.1);
+        }
+        &:hover .profile__img{
+            transform: 
+                scale(1.1);
+        }
     }
 
     &__background{
@@ -14,6 +24,7 @@
         border-radius: 50%;
         z-index: -1;
         transform: rotate(-10deg);
+        transition: all .6s cubic-bezier(.17,.67,.72,1.25);
         @include respond(xs){
             height: 23rem;
             width: 23rem;
@@ -26,7 +37,7 @@
 
     &__img{
         border-radius: 50%;
-        
+        transition: all .6s cubic-bezier(.17,.67,.72,1.25);
         
         &--me{
             width: 27rem;
