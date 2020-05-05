@@ -1,55 +1,22 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import TitleContent from '../../titleContent/titleContent';
 
 export default class TitleDefault extends Component {
+    state = {
+        titleContent: 
+            {
+                name: 'Kevin Laird',
+                descriptor: 'UX Designer',
+                img: '../assets/profile/profile_pic.jpg',
+                imgAlt: 'Kevin Laird Profile',
+                p1: 'I am a 2019 Interactive Media Design cum laude graduate from the University of Washington. As a passionate designer, I have experience developing several user interfaces utilizing design tools such as Sketch, Zeplin Illustrator, Photoshop, and Figma. Examples include a variety of different applications such as my website and a school project of a unique display of brain activity to enlighten self awareness.',
+                p2: 'I enjoy and value working with a team to achieve successful outcomes in delivering innovative results. Beyond academic rigor, my curiosity and self-motivation to expand my knowledge and expertise led me to learn front-end web development in order to empower myself to contribute to my future success.'
+            }
+    }
     render() {
-        
-
         return (
             <div>
-                <section className="bio default-layout">
-                    <div className="profile-box">
-                        <div className="profile__background profile__background--primary"></div>
-                        <div className="profile">
-                            <img src="../assets/profile/profile_pic.jpg" alt="Kevin Laird" className="profile__img profile__img--me"></img>
-                        </div>
-                        
-                    </div>
-                    
-                    <div className="content">
-                    <div className="content__title-box">
-                            <h1 className="content__title--name">
-                                Kevin Laird
-                            </h1>
-                            <div className="content__title--slash"></div>
-                            <h2 className="content__title--job">
-                                UX Designer
-                            </h2>
-                        </div>
-                        <div className="content__content-box">
-                            <div className="content__underlay content__underlay--primary"></div>
-                            <div className="content__paragraph-box content__paragraph-box--primary">
-                                <p className="content__paragraph">
-                                    I am a 2019 Interactive Media Design cum laude graduate from the University of 
-                                    Washington. As a passionate designer, I have experience developing several 
-                                    user interfaces utilizing design tools such as Sketch, Zeplin
-                                    Illustrator, Photoshop, and Figma. Examples include a variety of different 
-                                    applications such as my website and a school project of a unique display of 
-                                    brain activity to enlighten self awareness.</p>
-                                <p className="content__paragraph">
-                                    I enjoy and value working with a team to achieve successful outcomes in delivering 
-                                    innovative results. Beyond academic rigor, my curiosity and self-motivation to
-                                    expand my knowledge and expertise led me to learn front-end web development 
-                                    in order to empower myself to contribute to my future success.</p>
-                            </div>
-                        </div>
-                        <div className="content__btn-box">
-                        <a href="../assets/profile/resume.pdf" download className="link-btn link-btn--accent-2 content__btn">Resum&eacute;</a>
-                        <a href="https://www.linkedin.com/in/kevin-laird-ab2090150/" target="_blank" className="link-btn link-btn--accent-2 content__btn" rel="noopener noreferrer">LinkedIn</a>
-                        </div>
-                
-
-                    </div>
-                </section>
+                <TitleContent titleContent={this.state.titleContent} />
 
                 <section className="skills default-layout">
                     <div>
