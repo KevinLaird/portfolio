@@ -20,8 +20,8 @@ export class Projects extends Component {
               </TabList>
               <div className="projects">
                     {project.map((project) => (
-                        <TabPanel>
-                             <div className="project-card">
+                    <TabPanel>
+                    <div  className="project-card">
                     <div className="project-card__title-box">
                         <div className="project-card__title--sub-box">
                             <p className="body-2 project-card__title--sub"><strong>Type:</strong> {project.type}</p>
@@ -48,16 +48,15 @@ export class Projects extends Component {
                             <p className="body-2">{project.result}</p>
                         </li>
                     </ul>
-                    {/* <button className="project-card__exit"></button> */}
 
                     <div className="project-card__button-box">
                         <div>
-                            <a href="/" className="link-btn link-btn--primary-2"> Learn More</a>
+                            <a href={project.cta} className="link-btn link-btn--primary-2"> Learn More</a>
                             <p className="read-time">{project.readtime}</p>
                         </div>
                     </div>
                 </div>
-                        </TabPanel>
+                </TabPanel>
                     ))}
                 </div>
             </Tabs>

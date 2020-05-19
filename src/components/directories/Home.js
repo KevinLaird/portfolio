@@ -28,7 +28,8 @@ export default class Home extends Component {
             task: 'Made visual designs for the developer to rapidly create prototypes for the project.',
             action: 'Conducted visual research, competitive analyses, and brainwave-sensor research to create a resonant visual interface.',
             result: 'Presented the art installation to hundreds of guests, creating a lasting impact on both the visitors and the University of Washington.',
-            readtime: '*5 minute read'
+            readtime: '*5 minute read',
+            cta: "/introspect"
           },
           {
             id: 3,
@@ -50,6 +51,17 @@ export default class Home extends Component {
             task: 'Find my team\'s target audience, how to create game mechanics that are easy to use and engaging for that audience, and how to balance those systems to create a balanced and competitive setting.',
             action: '--',
             result: 'Created a board game that implements a balance between cooperation and competition.',
+            readtime: '*5 minute read'
+          },
+          {
+            id: 5,
+            title: 'Hostwinds',
+            type: 'Web Hosting',
+            role: 'Web Host Support Agent',
+            mission: 'Ensure quality support and hosting services to clients all around the world',
+            task: 'Communicate and assist clients to better sell our products.',
+            action: 'Created a welcoming environent for returning and newcoming clients by answering their pertinent questions and assisting them with finding the right product(s) that best fits their wants and needs.',
+            result: 'Maintained a 97% client satisfaction rating while also providing outstanding support.',
             readtime: '*5 minute read'
           }
         ]

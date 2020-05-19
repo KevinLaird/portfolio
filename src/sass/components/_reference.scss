@@ -33,4 +33,7 @@
 
 .references{
     margin: 0 4rem;
+    @include respond(xs){
+        margin: 0;
+    }
 }

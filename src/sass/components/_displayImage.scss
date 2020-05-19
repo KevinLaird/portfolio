@@ -1,0 +1,40 @@
+.displayImage{
+    
+    &--primary{
+        background-color: #fff;
+        color: $color-grey-a-1;
+    }
+    &__title{
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+        &-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem;
+        }
+    }
+    &__content{
+        color: $color-grey-a-2;
+        font-size: 2.4rem;
+    }
+
+
+    &__image{
+        &-box{
+            @include flex-center;
+        }
+    }
+
+
+    &__background{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        padding: 6rem;
+    }
+
+    // &__border{
+    //     border-right: 20rem solid $color-primary-2;
+    //     border-left: 20rem solid $color-primary-2;
+    // }
+}

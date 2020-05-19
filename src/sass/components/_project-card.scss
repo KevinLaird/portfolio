@@ -1,5 +1,8 @@
 .projects{
     margin: 0 4rem;
+    @include respond(xs){
+        margin: 0;
+    }
     &__links{
         @include button-reset;
         font-size: 3.6rem;
@@ -11,7 +14,7 @@
         
 
         &-box{
-            margin: 4rem 8rem;
+            margin: 4rem 4rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
             grid-column-gap: 7.5rem;

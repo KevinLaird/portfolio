@@ -1,0 +1,16 @@
+.center-border{
+    border-right: 20rem solid $color-primary-2;
+    border-left: 20rem solid $color-primary-2;
+    @include respond(lg){
+        border-right: 15rem solid $color-primary-2;
+        border-left: 15rem solid $color-primary-2;
+    }
+    @include respond(md){
+        border-right: 10rem solid $color-primary-2;
+        border-left: 10rem solid $color-primary-2;
+    }
+    @include respond(sm){
+        border-right: none;
+        border-left: none;
+    }
+}

@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 export class TitleContent extends Component {
 render() {
     const title = this.props.titleContent;
+    
 
+    
     const titleContent = (
     <section className="bio default-layout">
             <div className="profile-box">
@@ -26,20 +28,20 @@ render() {
                 <div className="content__content-box">
                     <div className="content__underlay content__underlay--primary"></div>
                     <div className="content__paragraph-box content__paragraph-box--primary">
-                        <p className="content__paragraph">
-                            {title.p1}
-                        </p>
-                        <p className="content__paragraph">
-                            {title.p2}
-                            </p>
+                        {title.p.map((p, index) => (
+                            <p key={index} className={"content__paragraph " + title.size}>
+                                {p}
+                            </p> 
+                        ))}
                     </div>
                 </div>
                 <div className="content__btn-box">
-                    <a href="../assets/profile/resume.pdf" download className="link-btn link-btn--accent-2 content__btn">Resum&eacute;</a>
-                    <a href="https://www.linkedin.com/in/kevin-laird-ab2090150/" target="_blank" className="link-btn link-btn--accent-2 content__btn" rel="noopener noreferrer">LinkedIn</a>
+                <a href="../assets/profile/resume.pdf" download className={"link-btn link-btn--accent-2 content__btn " + title.display}>Resum&eacute;</a>
+                    <a href="https://www.linkedin.com/in/kevin-laird-ab2090150/" target="_blank" className={"link-btn link-btn--accent-2 content__btn " + title.display} rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
-        </section>);
+        </section>
+        );
     return(titleContent);
     }
 

@@ -30,6 +30,10 @@
     height: 100%;
 }
 
+.u-title-2{
+    font-size: 2.6rem;
+}
+
 
 .u-grid-box-col-2{
     display: grid;
@@ -58,5 +62,9 @@
             grid-template-columns: 1fr;
             row-gap: 1.4rem;
         }
+}
+
+.u-display-none{
+    display: none;
 }
 
