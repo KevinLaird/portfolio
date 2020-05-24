@@ -44,3 +44,14 @@
         }
     }
 }
+
+.references{
+    margin: 4rem;
+    @include respond(xs){
+        margin: 0;
+    }
+    &-box{
+        background-color: #fff;
+        box-shadow: $shadows-1;
+    }
+}

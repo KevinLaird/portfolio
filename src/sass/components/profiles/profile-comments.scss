@@ -1,10 +1,18 @@
-.reference{
+.profile-comment{
+    &--title{
+        background-color: $color-primary-1;
+        color: $color-primary-5;
+        padding: 1.1rem 3.5rem;
+    }
+    &__comment{
+        font-size: 1.6rem;
+        color: $color-grey-a-2
+    }
     &-box{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         grid-column-gap: 2.5rem;
         padding: 4rem;
-        margin-bottom: 4rem;
     }
     &__item{
         & > * {
@@ -14,12 +22,13 @@
             display: flex;
             &-img{
                 border-radius: 200rem;
-                border: solid #fff 3px;
+                border: solid $color-primary-1 3px;
                 height: 7rem;
                 width: 7rem;
             }
         }
         &--title{
+            color: $color-grey-a-1;
             &-box{
                 display: flex;
                 flex-direction: column;
@@ -27,13 +36,8 @@
                 margin-left: 2rem;
             }
         }
-        // &--subtitle{}
-    }
-}
-
-.references{
-    margin: 0 4rem;
-    @include respond(xs){
-        margin: 0;
+        &--subtitle{
+            color: $color-grey-a-2;
+        }
     }
 }

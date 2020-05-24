@@ -8,7 +8,7 @@ export class SkillCard extends Component {
             <div>
                 <div className="skill-card-box">
                     <div className={"skill-card__title-box skill-card__title-box--" + skillContent.design}>
-        <h2 className={"h2 skill-card__title skill-card__title--" + skillContent.design}>{skillContent.title}</h2>
+                    <h2 className={"h2 skill-card__title skill-card__title--" + skillContent.design}>{skillContent.title}</h2>
                         <i className={"skill-card__title-icon " + skillContent.icon}></i>
                     </div>
                     <div className={"skill-card__content-box skill-card__content-box--" + skillContent.design}>

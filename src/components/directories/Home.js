@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Projects from '../projects/Projects';
-import Reference from '../references/reference/Reference';
+import ProfileComment from '../comments/ProfileComment';
 import Footer from '../layout/footer/Footer';
 import Navbar from '../layout/nav/Navbar';
 import Sources from '../sources/Sources';
@@ -64,6 +64,36 @@ export default class Home extends Component {
             result: 'Maintained a 97% client satisfaction rating while also providing outstanding support.',
             readtime: '*5 minute read'
           }
+        ],
+
+        profiles: [
+          {
+            title: 'Abraham Avnisan',
+            subtitle: 'University of Washington Professor - Supervisor',
+            image: './assets/reference/Abe.jpeg',
+            testimony: [
+                      'I had the pleasure of working with Kevin across his two years at University of Washington Bothell\'s Interactive Media Design program, including during his last semester when he worked as the UI/UX Designer for his team\'s capstone project.',
+                      "Kevin is a talented designer with an exceptional work ethic. He is passionate about what he does, and it comes through not only in the high quality of work that he produces, but in the positive relationships he forges with the people he collaborates with. As a team player, Kevin is a good listener and compromiser, but he also isn't afraid to advocate for a position he strongly believes in. I am confident that Kevin will make a positive and valuable addition to any company or project he contributes to."
+            ]
+          },
+          {
+            title: 'Wanda Gregory, PhD',
+            subtitle: 'University of Washington Professor - Supervisor',
+            image: './assets/reference/Wanda.jpeg',
+            testimony: [
+                      "I have known Kevin for several years now through my classes in game and interactive media design. I found Kevin to be an extremely creative designer and thoughtful student whose work was user-focused and innovative.",
+                      "He was a solid collaborator on team projects. Someone willing to go over and beyond to help his team make their deadlines and deliverables. The words which come to mind when I think of Kevin include solid communicator (verbal and written), collaborator, and innovator with a positive attitude. I think he will be an excellent addition to any company and will certainly add to the success of any project he is involved with."
+            ]
+          },
+          {
+            title: 'Rutuja Nehra',
+            subtitle: 'UI/UX Designer - Team Member',
+            image: './assets/reference/Rutuja.jpeg',
+            testimony: [
+                      "Kevin brings a mixture of creative professionalism yet light-hearted fun with everything he works on. He is always eager to learn and constantly improving his skillsets in a multitude of areas.",
+                      "Working with him on projects was always an enjoyable experience as he went above and beyond to ensure that he maintained excellent communication with his team members and that his work exceeded expectations. As a fellow designer, I would highly recommend Kevin to anyone as I believe he will excel in any position he finds himself in."
+            ]
+          }
         ]
       }
     render() {
@@ -76,12 +106,12 @@ export default class Home extends Component {
             </section>
 
             <section className="references">
-                <div className="bar bar--blue-2">
-                    <div className="title__section--title-box">
-                        <h1 className="h1 title__section--title">References</h1>
+                <div className="references-box">
+                    <div className="profile-comment--title-box">
+                        <h1 className="h1 profile-comment--title">References</h1>
                     </div>
-                    <div className="reference-box">
-                        <Reference />
+                    <div className="profile-comment-box">
+                        <ProfileComment profileComment = {this.state.profiles} />
                     </div>
                 </div>
             </section>
