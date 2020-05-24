@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 export default class DisplayImage extends Component {
     title() {
         const display = this.props.displayImage;
@@ -26,14 +27,14 @@ export default class DisplayImage extends Component {
         let displayImage;
         if(display.orientation === true && window.screen.width >= 768){
             displayImage = (
-                <div className = {"displayImage__background " + display.design}>
+                <div className = {"displayImage__background displayImage__layout"}>
                     {this.image()}
                     {this.title()}
                 </div>
             )
         } else{
             displayImage =(
-                <div className = {"displayImage__background " + display.design}>
+                <div className = {"displayImage__background displayImage__layout"}>
                     {this.title()}
                     {this.image()}
                 </div>

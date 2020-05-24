@@ -50,4 +50,4 @@ export class Reference extends Component {
     }
 }
 
-export default Reference
+export default Reference;

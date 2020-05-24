@@ -7,17 +7,18 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/titles/main-title";
+@import "components/titles/section-title";
 @import "components/add-card";
 @import "components/bar";
 @import "components/btn";
-@import "components/content";
-@import "components/profile";
 @import "components/project-card";
 @import "components/reference";
 @import "components/skill-card";
 @import "components/react-tabs";
 @import "components/displayImage";
 @import "components/video";
+
 
 @import "layout/default-layout";
 @import "layout/footer";
@@ -29,3 +30,4 @@
 @import "pages/contact";
 @import "pages/about";
 @import "pages/index";
+@import "pages/pages-general";

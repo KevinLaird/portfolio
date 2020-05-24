@@ -1,30 +1,8 @@
-.bio{
-    display: flex;
-    @include respond(md){
-        padding-top: 9.5rem;
-        display: grid;
-    }
-
-}
-
-.skills{
-    padding-bottom: 0;
-    @include respond(md){
-        padding: 0 4rem 4rem;
-    }
-    @include respond(xs){
-        padding: 0 1rem 4rem;
-    }
-    &__divider{
-        margin-bottom: 4rem;
-        @include respond(md){
-            margin-bottom: 0;
-        }
-    }
-    &__layout{
-        margin-bottom: 4rem;
-        @include respond(md){
-            margin-bottom: 0;
+.about{
+    &-container{
+        margin: 7rem 5rem 5rem;
+        @include respond(xs){
+            margin: 4rem 2rem 2rem;
         }
     }
 }

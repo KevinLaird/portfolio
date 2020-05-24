@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Footer from '../../layout/footer/Footer';
 import Navbar from '../../layout/nav/Navbar';
-import TitleContent from '../../layout/titleContent/titleContent';
+import MainTitle from '../../layout/titles/MainTitle';
 import DisplayImage from '../../display/DisplayImage'
 
 export default class Introspect extends Component {
     state = {
-        titleContent: 
+        mainTitle: 
             {
                 name: 'IntroSpect',
                 descriptor: 'UI/UX Designer',
@@ -48,11 +48,17 @@ export default class Introspect extends Component {
         return (
             <div>
                 <Navbar />
-                <TitleContent titleContent = {this.state.titleContent} /> 
-                <section className="center-border">
-                <DisplayImage displayImage = {this.state.whatIs} />
-                <DisplayImage displayImage = {this.state.soWhat} />
-                <DisplayImage displayImage = {this.state.selfReflection} />
+                <div className="pages-general">
+
+                
+                <MainTitle mainTitle = {this.state.mainTitle} />
+                <section>
+                    <div className="displayImage__layout">
+                        <DisplayImage displayImage = {this.state.whatIs} />
+                        <DisplayImage displayImage = {this.state.soWhat} />
+                        <DisplayImage displayImage = {this.state.selfReflection} />
+                    </div>
+                
                 <div className="u-flex-center">
                 <iframe
                 className="video"
@@ -68,7 +74,7 @@ export default class Introspect extends Component {
                 </div>
                 
                 </section>
-                
+                </div>
                 <Footer />
             </div>
         )

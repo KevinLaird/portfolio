@@ -1,8 +1,31 @@
 .skills{
     padding-top: 0;
+    padding-bottom: 0;
+    @include respond(md){
+        padding: 0 4rem 4rem;
+    }
+    @include respond(xs){
+        padding: 0 1rem 4rem;
+    }
+
+    &__divider{
+        margin-bottom: 5rem;
+        @include respond(md){
+            margin-bottom: 0;
+        }
+    }
     &__layout{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-        grid-gap: 4rem;
+        grid-gap: 5rem;
+        margin-bottom: 5rem;
+        box-shadow: $shadows-1;
+        padding: 3rem;
+        @include respond(md){
+            margin-bottom: 0;
+        }
+        @include respond(xs){
+            grid-gap: 2rem;
+        }
     }
 }

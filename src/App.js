@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.scss';
 import Home from "./components/directories/Home";
 import Contact from "./components/directories/Contact";
@@ -8,8 +8,7 @@ import { Switch, Route } from 'react-router-dom';
 
 
 
-class App extends Component {
-  render() {
+function App(){
     return (
       <div className="App">
         <Switch>
@@ -20,8 +19,6 @@ class App extends Component {
         </Switch>
       </div> 
     );
-  }
-  
 }
 
 export default App;

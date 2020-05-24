@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Navbar from "../layout/nav/Navbar";
-import TitleContent from '../layout/titleContent/titleContent';
+import MainTitle from '../layout/titles/MainTitle';
+import SectionTitle from '../layout/titles/SectionTitle';
 import SkillCard from '../skillCard/SkillCard';
 import Footer from "../layout/footer/Footer";
 
 export default class About extends Component {
     state = {
-        titleContent: 
+        mainTitle: 
             {
                 name: 'Kevin Laird',
                 descriptor: 'UX Designer',
@@ -16,6 +17,9 @@ export default class About extends Component {
                     'I enjoy and value working with a team to achieve successful outcomes in delivering innovative results. Beyond academic rigor, my curiosity and self-motivation to expand my knowledge and expertise led me to learn front-end web development in order to empower myself to contribute to my future success.'],
                 display: true
             },
+        skillsTitle: {
+            title: "Skills"
+        },
         skillContentDesign: 
             {
                 title: "Design",
@@ -70,15 +74,12 @@ export default class About extends Component {
         return (
             <div>
                 <Navbar />
-                <TitleContent titleContent = {this.state.titleContent} />
+                <div className="pages-general">
+                <MainTitle mainTitle = {this.state.mainTitle} />
+                <SectionTitle sectionTitle = {this.state.skillsTitle} />
 
-                <section className="skills default-layout">
-                    <div>
-                        <h3 className="h1">Skills</h3>
-                        <hr className="add-card__divider skills__divider"></hr>
-                    </div>
+                <section className="">
                     <div className="skills__layout">
-
                     <SkillCard skillCard = {this.state.skillContentDesign} />
                     <SkillCard skillCard = {this.state.skillContentProgramming} />
                     <SkillCard skillCard = {this.state.skillContentSoftware} />
@@ -86,7 +87,7 @@ export default class About extends Component {
                     </div>
                 </section>
 
-                <section className="education">
+                {/* <section className="">
                     <div className="bar bar--blue-1">
                         <div className="title__section--title-box education__title__section--title-box">
                             <h1 className="h1 title__section--title">Education</h1>
@@ -129,7 +130,9 @@ export default class About extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+                </div>
+                
                 <Footer />
             </div>
         )

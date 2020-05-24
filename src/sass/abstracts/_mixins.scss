@@ -1,5 +1,4 @@
-//background gradients
-
+//link-reset
 @mixin link-reset{
     &,
     &:link,
@@ -9,6 +8,7 @@
     }
 }
 
+//layout
 @mixin center-horizontal-vertical{
     position: absolute;
     top: 50%;
