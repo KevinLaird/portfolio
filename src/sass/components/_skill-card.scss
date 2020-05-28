@@ -36,6 +36,7 @@
     &__content{
         &-box{
             display: grid;
+            grid-gap: 2rem;
             grid-template-columns: 1fr 1fr;
             padding: 2rem 4rem;
             height: 25rem;

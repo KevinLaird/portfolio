@@ -1,0 +1,38 @@
+.title-with-content{
+    &__box{
+        display: grid;
+        grid-gap: 5rem;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        padding: 5rem;
+        position: relative;
+        @include respond(xs){
+            padding: 3rem;
+            grid-gap: 3rem;
+        }
+    }
+    &__item{
+    }
+    &__title{
+        font-size: 3.6rem;
+        font-weight: bold;
+        margin-bottom: .4rem;
+        @include respond(xs){
+            font-size: 2.6rem;
+        }
+    }
+    &__subtitle{
+        color: $color-grey-a-2;
+        font-size: 2rem;
+        margin-bottom: 1.4rem;
+        @include respond(xs){
+            font-size: 1.8rem;
+        }
+
+    }
+    &__content{
+        font-size: 1.8rem;
+        @include respond(xs){
+            font-size: 1.6rem;
+        }
+    }
+}

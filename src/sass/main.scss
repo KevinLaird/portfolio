@@ -9,21 +9,23 @@
 
 @import "components/titles/main-title";
 @import "components/titles/section-title";
+@import "components/titles/title-with-content";
 @import "components/profiles/profile-comments.scss";
+@import "components/tabs/react-tabs";
+@import "components/tabs/info-tab";
 @import "components/add-card";
 @import "components/bar";
 @import "components/btn";
 @import "components/project-card";
 @import "components/skill-card";
-@import "components/react-tabs";
 @import "components/displayImage";
 @import "components/video";
-
+@import "components/carousel";
 
 @import "layout/default-layout";
+@import "layout/section-card";
 @import "layout/footer";
 @import "layout/nav";
-@import "layout/skills";
 @import "layout/title";
 @import "layout/center-border";
 
@@ -31,3 +33,4 @@
 @import "pages/about";
 @import "pages/index";
 @import "pages/pages-general";
+@import "pages/projects/introspect";

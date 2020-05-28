@@ -3,6 +3,7 @@ import Navbar from "../layout/nav/Navbar";
 import MainTitle from '../layout/titles/MainTitle';
 import SectionTitle from '../layout/titles/SectionTitle';
 import SkillCard from '../skillCard/SkillCard';
+import TitleWithContent from '../layout/titles/TitleWithContent';
 import Footer from "../layout/footer/Footer";
 
 export default class About extends Component {
@@ -67,7 +68,31 @@ export default class About extends Component {
                 ],
                 design: "semantic-b",
                 icon: "fas fa-microchip"
-            } 
+            },
+        bachelors:
+            {
+                title: "BA Interactive Media Design",
+                subtitle: "University of Washington | September 2017 - June 2019",
+                content: [
+                    "With its interdisciplinary approach to interaction design and emphasis on studio practice, IMD enables students to develop creative solutions to complex problems."
+                ]
+            },
+        associates:
+            {
+                title: "Associates Arts & Science",
+                subtitle: "Bellevue College | September 2014 - June 2015",
+                content: [
+                    "Utilized my High School’s “Running Start” program to create a broad understanding of context in design, a deep understanding in the Liberal Arts, and cultivate a pathway to grow and explore new areas of study."
+                ]
+            },
+        highschool:
+            {
+                title: "High School Diploma",
+                subtitle: "Hazen High School | September 2012 - June 2015",
+                content: [
+                    "Obtained a general education to provide a clear pathway to a higher education in the field of human computer interaction design."
+                ]
+            }
     }
     
     render() {
@@ -87,53 +112,21 @@ export default class About extends Component {
                     </div>
                 </section>
 
-                {/* <section className="">
-                    <div className="bar bar--blue-1">
-                        <div className="title__section--title-box education__title__section--title-box">
-                            <h1 className="h1 title__section--title">Education</h1>
+                <section>
+                    <div className="references-box">
+                        <div className="profile-comment--title-box">
+                            <h1 className="h1 profile-comment--title">Education</h1>
                         </div>
-                        <div className="education-box">
-                            <div className="education__title-box">
-                                <h2 className="h1 education__title">BA Interactive Media Design</h2>
-                                <h3 className="h3 education__subtitle">University of Washington | September 2017 - June 2019</h3>
-                            </div>
-                            <div className="education__content-box">
-                                <p className="education__content">
-                                    <strong>Mission:</strong> With its interdisciplinary approach to
-                                    interaction design and emphasis on studio practice,
-                                    IMD enables students to develop creative solutions
-                                    to complex problems.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="education-box">
-                            <div className="education__title-box">
-                                <h2 className="h1 education__title">Associate in Arts & Sciences</h2>
-                                <h3 className="h3 education__subtitle">Bellevue College | September 2014 - December 2017</h3>
-                            </div>
-                            <div className="education__content-box">
-                                <p className="education__content">
-                                    <strong>Mission:</strong> Create a broad understanding of context in design, a deep understanding in the Liberal Arts, 
-                                    and cultivate a pathway to grow and explore new areas of study. 
-                                </p>
-                            </div>
-                        </div>
-                        <div className="education-box">
-                            <div className="education__title-box">
-                                <h2 className="h1 education__title">High School Diploma</h2>
-                                <h3 className="h3 education__subtitle">Hazen High School | September 2011 - June 2015</h3>
-                            </div>
-                            <div className="education__content-box">
-                                <p className="education__content">
-                                    <strong>Mission:</strong> Obtain a general education to provide a clear pathway to a higher education in the field of human computer interaction design.
-                                </p>
-                            </div>
+                        <div className="title-with-content__box">
+                            <TitleWithContent content = {this.state.bachelors}/> 
+                            <TitleWithContent content = {this.state.associates}/> 
+                            <TitleWithContent content = {this.state.highschool}/> 
                         </div>
                     </div>
-                </section> */}
-                </div>
+                </section>
+            </div>
                 
-                <Footer />
+            <Footer />
             </div>
         )
     }

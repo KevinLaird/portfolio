@@ -1,0 +1,12 @@
+.introspect{
+    &__process{
+        &-box{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5rem;
+        }
+       
+        width: 50%;
+        height: 50%;
+    }
+}

@@ -5,27 +5,28 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 export class Projects extends Component {
     
     render() {
-        const project = this.props.projects;
+        const project = this.props.content;
         
-        const projects = (
+        const content = (
             <Tabs>
               <TabList>
                 <div className="projects__links-box">
-                    {project.map((project) => (
+                    {project.map((project, index) => (
                         <Tab>
-                            <button key={project.id} className="projects__links"><p className="projects__links--content">{project.title}</p></button>
+                            <button key={index} className="projects__links"><p className="projects__links--content">{project.title}</p></button>
                         </Tab>
                     ))}
                 </div>
               </TabList>
               <div className="projects">
-                    {project.map((project) => (
-                    <TabPanel>
-                    <div  className="project-card">
+                    {project.map((project, index) => (
+                    <TabPanel key={index}>
+                    <div className="project-card">
                     <div className="project-card__title-box">
                         <div className="project-card__title--sub-box">
                             <p className="body-2 project-card__title--sub"><strong>Type:</strong> {project.type}</p>
                             <p className="body-2 project-card__title--sub"><strong>Role:</strong> {project.role}</p>
+                            <p className="body-2 project-card__title--sub"><strong>Time:</strong> {project.time}</p>
                         </div>
                         <h1 className="h1 project-card--title">{project.title}</h1>
                     </div>
@@ -63,7 +64,7 @@ export class Projects extends Component {
           );
 
 
-        return(projects);
+        return(content);
         }
     }
 

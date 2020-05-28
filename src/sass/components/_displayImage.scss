@@ -4,7 +4,6 @@
             margin-bottom: 5rem;
         }
     }
-
     &__title{
         font-size: 3.6rem;
         margin-bottom: 2rem;
@@ -13,6 +12,9 @@
             flex-direction: column;
             justify-content: center;
             padding: 4rem;
+            @include respond(md){
+                padding: 0;
+            }
         }
     }
     &__content{
@@ -21,6 +23,13 @@
     }
 
     &__image{
+        object-fit: contain;
+        @include respond(md){
+            width: 80%;
+        }
+        @include respond(xs){
+            width: 70%;
+        }
         &-box{
             @include flex-center;
         }
@@ -30,7 +39,14 @@
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         padding: 6rem;
         box-shadow: $shadows-1;
+        grid-gap: 5rem;
         border-right: 5rem solid $color-primary-1;
         border-left: 5rem solid $color-primary-1;
+        @include respond(xs){
+            padding: 4rem 2rem;
+            grid-gap: 5rem;
+            border-right: 3rem solid $color-primary-1;
+            border-left: 3rem solid $color-primary-1;
+        }
     }
 }

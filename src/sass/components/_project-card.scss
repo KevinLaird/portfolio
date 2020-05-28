@@ -52,7 +52,8 @@
             color: $color-grey-a-3;
             &-box{
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
+                grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
+                grid-gap: 1.5rem;
             }
         }
     }
