@@ -10,3 +10,12 @@
         grid-gap: 4rem;
     }
 }
+
+.default-card{
+    background-color: #fff;
+    box-shadow: $shadows-1;
+    @include borders;
+    padding: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+}

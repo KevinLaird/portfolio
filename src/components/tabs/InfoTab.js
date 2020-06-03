@@ -23,6 +23,7 @@ export default class InfoTab extends Component {
                         {/* Display the Tabs */}
                         {tab.map((item, index) => (
                             <TabPanel key={index}>
+                                <h2 className="info-tab__content--title">{item.title}</h2>
                                 <p className="info-tab__content">{item.content}</p>
                             </TabPanel>
                         ))}

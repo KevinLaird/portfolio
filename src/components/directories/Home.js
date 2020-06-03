@@ -17,7 +17,7 @@ export default class Home extends Component {
             mission: 'Ensure quality support and hosting services to clients all around the world',
             task: 'Communicate and assist clients to better sell our products.',
             action: 'Created a welcoming environent for returning and newcoming clients by answering their pertinent questions and assisting them with finding the right product(s) that best fits their wants and needs.',
-            result: 'Maintained a 97% client satisfaction rating while also providing outstanding support.',
+            result: '//',
             readtime: '*5 minute read'
           },
           {
@@ -100,9 +100,8 @@ export default class Home extends Component {
         ]
       }
     render() {
-      // key={this.state.projects.id}
         return (
-            <div>
+        <div>
         <Navbar />
             <Sources />
             <section className="projects__section">  

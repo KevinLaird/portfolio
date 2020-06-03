@@ -2,7 +2,7 @@
     &-box{
         display: flex;
         margin-bottom: 5rem;
-        border-right: 1.5rem solid $color-primary-1;
+        
         @include respond(md){
             display: grid;
             grid-template-columns: 1fr;
@@ -36,21 +36,31 @@
         }
     }
     &__content{
-        font-size: 3.6rem;
+        font-size: 2.4rem;
+        font-family: lato;
+        text-align: left;
+        &--title{
+            font-size: 3.6rem;
+            color: $color-grey-a-1;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
         &-box{
-            display: flex;
-            justify-content: center;
-            align-items: center;
             box-shadow: $shadows-1;
             width: 100%;
             height: inherit;
             padding: 5rem;
-            border-left: 5.4rem solid $color-primary-1;
+            border-left: 5rem solid $color-primary-1;
+            border-right: 5rem solid $color-primary-1;
             color: $color-grey-a-2;
 
             @include respond(md){
                 border-left: 4rem solid $color-primary-1;
                 border-right: 4rem solid $color-primary-1;
+            }
+            @include respond(xs){
+                border-left: 3rem solid $color-primary-1;
+                border-right: 3rem solid $color-primary-1;
             }
         }
     }

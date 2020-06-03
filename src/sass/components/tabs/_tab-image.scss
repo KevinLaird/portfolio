@@ -1,0 +1,95 @@
+.tab-image{
+    &-box{
+        @include borders;
+        padding: 5rem;
+        margin-bottom: 5rem;
+        box-shadow: $shadows-1;
+    }
+    &__descriptor{
+        &-box{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2.5rem;
+        }
+        &--title{
+            font-size: 3.6rem;
+            font-weight: bold;
+            color: $color-accent-1;
+            padding-bottom: 1.4rem;
+            
+            border-bottom: solid .6rem $color-primary-2;
+            &-box{
+                display: flex;
+                margin-bottom: 2rem;
+            }
+        }
+        &--content{
+            font-family: lato;
+            color: $color-grey-a-1;
+            font-size: 1.8rem;
+        }
+    }
+    &__selector{
+        color: $color-primary-5;
+        &-box{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-gap: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+        &-tab{
+            padding: 1.8rem 7.2rem;
+            @include respond(md){
+                padding: 1.6rem 1.2rem;
+            }
+            @include respond(xs){
+                padding: 1.4rem 1.2rem;
+            }
+        }
+    }
+    &__content{
+        &-box{
+            &--40{
+                height: 40rem; 
+            }
+            &--60{
+                height: 60rem; 
+            }
+        }
+        &--image{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: contain;
+            &--cover{
+                object-fit: cover;
+            }
+            &-box{
+                position: relative;
+                height: 30rem;
+                @include respond(md){
+                    height: 21rem;
+                }
+                @include respond(xs){
+                    height: 11rem;
+                }
+                &--40{
+                    height: 40rem; 
+                }
+                &--60{
+                    height: 60rem; 
+                }
+            }
+        }
+    }
+
+    &__caption{
+        font-family: lato;
+        font-size: 1.8rem;
+        border-top: solid 0.6rem $color-primary-4;
+        padding-top: 1.5rem;
+        &-box{
+            margin-bottom: 2.5rem;
+        }
+    }
+}

@@ -80,7 +80,7 @@ export default class About extends Component {
         associates:
             {
                 title: "Associates Arts & Science",
-                subtitle: "Bellevue College | September 2014 - June 2015",
+                subtitle: "Bellevue College | September 2014 - December 2016",
                 content: [
                     "Utilized my High School’s “Running Start” program to create a broad understanding of context in design, a deep understanding in the Liberal Arts, and cultivate a pathway to grow and explore new areas of study."
                 ]
@@ -101,7 +101,7 @@ export default class About extends Component {
                 <Navbar />
                 <div className="pages-general">
                 <MainTitle mainTitle = {this.state.mainTitle} />
-                <SectionTitle sectionTitle = {this.state.skillsTitle} />
+                <SectionTitle content = {this.state.skillsTitle} />
 
                 <section className="">
                     <div className="skills__layout">

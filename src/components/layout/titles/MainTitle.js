@@ -66,7 +66,7 @@ export class MainTitle extends Component {
                 <div className="main-title__underlay main-title__underlay--primary"></div>
                 <div className="main-title__paragraph-box main-title__paragraph-box--design">
                     {title.p.map((p, index) => (
-                        <p key={index} className={"main-title__paragraph " + title.size}>
+                        <p key={`${index}-main-title-${this.props.mainTitle}`} className={"main-title__paragraph " + title.size}>
                             {p}
                         </p> 
                     ))}

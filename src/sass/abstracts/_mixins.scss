@@ -106,3 +106,13 @@
     text-decoration: none;
     background: none;
 }
+
+@mixin borders{
+    border-right: solid 5rem $color-primary-1;
+    border-left: solid 5rem $color-primary-1;
+    @include respond(xs){
+        border-right: solid 3rem $color-primary-1;
+        border-left: solid 3rem $color-primary-1;
+        padding-bottom: 9rem;
+      }
+}

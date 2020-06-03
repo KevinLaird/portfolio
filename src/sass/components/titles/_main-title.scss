@@ -76,7 +76,7 @@
             transition: all .2s;
             height: -webkit-fill-available;
             &:hover{
-                transform: scale(1.01);
+                transform: translateZ(0) scale(1.01);
             }
         }
     }

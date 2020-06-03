@@ -26,17 +26,17 @@ export default class DisplayImage extends Component {
     title() {
         const display = this.props.displayImage;
         return(
-            <div className="displayImage__title-box">
-                <h1 className={display.design + " displayImage__title"}>{display.title}</h1>
-                <p className={display.design + " displayImage__content"}>{display.content}</p>
+            <div className="display-image__title-box">
+                <h1 className={display.design + " display-image__title"}>{display.title}</h1>
+                <p className={display.design + " display-image__content"}>{display.content}</p>
             </div>
         )
     }
     image() {
         const display = this.props.displayImage;
         return (
-            <div className="displayImage__image-box">
-                <img className = "displayImage__image" src={display.img} alt={display.imgAlt}/>
+            <div className="display-image__image-box">
+                <img className = "display-image__image" src={display.img} alt={display.imgAlt}/>
             </div>
         )
     }
@@ -49,14 +49,14 @@ export default class DisplayImage extends Component {
         let displayImage;
         if(display.orientation === true && isDesktop){
             displayImage = (
-                <div className = {"displayImage__background displayImage__layout"}>
+                <div className = {"display-image__background display-image__layout"}>
                     {this.image()}
                     {this.title()}
                 </div>
             )
         } else{
             displayImage =(
-                <div className = {"displayImage__background displayImage__layout"}>
+                <div className = {"display-image__background display-image__layout"}>
                     {this.title()}
                     {this.image()}
                 </div>

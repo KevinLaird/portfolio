@@ -5,8 +5,20 @@
             justify-content: center;
             margin-bottom: 5rem;
         }
-       
         width: 50%;
         height: 50%;
+    }
+
+    &__program{
+        height: 60rem;
+        width: inherit;
+        &-box{
+            @include respond(sm){
+                display: none;
+            }
+        }
+        &--title{
+            padding-top: 0;
+        }
     }
 }
