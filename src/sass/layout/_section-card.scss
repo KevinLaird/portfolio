@@ -1,7 +1,7 @@
 .section-card{
     box-shadow: $shadows-1;
     position: relative;
-    margin-bottom: 5rem;
+    @include default-margin;
     @include borders;
     border-right: none;
     &::after{
@@ -25,6 +25,10 @@
             display: flex;
             flex-direction: column;
             padding: 5rem 0 0 5rem;
+            @include respond(xs){
+                padding: 3.5rem 1.5rem;
+                padding-bottom: 0;
+            }
         }
     }
     &__subtitle{
@@ -40,6 +44,9 @@
         @include respond(sm){
             width: 100%;
             padding: 5rem;
+        }
+        @include respond(xs){
+            padding: 3.5rem 1.5rem;
         }
         &-title{
             font-size: 3.6rem;

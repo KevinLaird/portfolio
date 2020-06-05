@@ -1,7 +1,7 @@
 .info-tab{
     &-box{
         display: flex;
-        margin-bottom: 5rem;
+        @include default-margin;
         
         @include respond(md){
             display: grid;
@@ -49,19 +49,9 @@
             box-shadow: $shadows-1;
             width: 100%;
             height: inherit;
-            padding: 5rem;
-            border-left: 5rem solid $color-primary-1;
-            border-right: 5rem solid $color-primary-1;
+            @include borders;
+            @include padding;
             color: $color-grey-a-2;
-
-            @include respond(md){
-                border-left: 4rem solid $color-primary-1;
-                border-right: 4rem solid $color-primary-1;
-            }
-            @include respond(xs){
-                border-left: 3rem solid $color-primary-1;
-                border-right: 3rem solid $color-primary-1;
-            }
         }
     }
     &__tab{

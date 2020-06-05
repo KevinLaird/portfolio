@@ -1,6 +1,9 @@
 .display-image{
     &__layout{
-        margin-bottom: 5rem;
+        @include default-margin;
+        animation: moveInBottom 1s;
+        animation-delay: .9s;
+        animation-fill-mode: backwards;
     }
     &__title{
         font-size: 3.6rem;
@@ -36,16 +39,13 @@
     &__background{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-        padding: 6rem;
+        @include padding;
         box-shadow: $shadows-1;
         grid-gap: 5rem;
-        border-right: 5rem solid $color-primary-1;
-        border-left: 5rem solid $color-primary-1;
+        @include borders;
         @include respond(xs){
             padding: 4rem 2rem;
             grid-gap: 5rem;
-            border-right: 3rem solid $color-primary-1;
-            border-left: 3rem solid $color-primary-1;
         }
     }
 }

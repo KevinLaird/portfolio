@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import NavbarDropdown from './NavbarDropdown';
 import { Link } from 'react-router-dom';
 
 
@@ -24,12 +23,6 @@ export class navbar extends Component {
                             About
                         </Link>
                     </li>
-                    {/* <NavbarDropdown /> */}
-                    {/* <li className="nav__item">
-                        <Link to='/contact' className="nav__link h2">
-                            Contact
-                        </Link>
-                    </li> */}
                 </ul>
             </nav>
         )

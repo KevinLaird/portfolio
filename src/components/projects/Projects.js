@@ -12,15 +12,15 @@ export class Projects extends Component {
               <TabList>
                 <div className="projects__links-box">
                     {project.map((project, index) => (
-                        <Tab>
-                            <button key={`${index}-button-${project.title}`} className="projects__links"><p className="projects__links--content">{project.title}</p></button>
+                        <Tab key={`${index}-button-${project.title}`}>
+                            <button className="projects__links"><p className="projects__links--content">{project.title}</p></button>
                         </Tab>
                     ))}
                 </div>
               </TabList>
               <div className="projects">
                     {project.map((project, index) => (
-                    <TabPanel key={index}>
+                    <TabPanel key={`${index}-card-${project.time}`}>
                     <div className="project-card">
                     <div className="project-card__title-box">
                         <div className="project-card__title--sub-box">
@@ -33,26 +33,26 @@ export class Projects extends Component {
                     
                     <ul className="project-card__list project-card__list--content">
                         <li className="project-card__list-item">
-                        <h3 className="h3">Mission</h3>
-                            <p className="body-2">{project.mission}</p>
+                        <h3 className="h3 project-card__list-item--title">Mission</h3>
+                            <p className="body-2 project-card__list-item--body">{project.mission}</p>
                         </li>
                         <li className="project-card__list-item">
-                            <h3 className="h3">Task</h3>
-                            <p className="body-2">{project.task}</p>
+                            <h3 className="h3 project-card__list-item--title">Task</h3>
+                            <p className="body-2 project-card__list-item--body">{project.task}</p>
                         </li>
                         <li className="project-card__list-item">
-                            <h3 className="h3">Action</h3>
-                            <p className="body-2"> {project.action}</p>
+                            <h3 className="h3 project-card__list-item--title">Action</h3>
+                            <p className="body-2 project-card__list-item--body"> {project.action}</p>
                         </li>
                         <li className="project-card__list-item">
-                            <h3 className="h3">Result</h3>
-                            <p className="body-2">{project.result}</p>
+                            <h3 className="h3 project-card__list-item--title">Result</h3>
+                            <p className="body-2 project-card__list-item--body">{project.result}</p>
                         </li>
                     </ul>
 
                     <div className="project-card__button-box">
                         <div>
-                            <a href={project.cta} className="link-btn link-btn--primary-2"> Learn More</a>
+                            <a href={project.cta} className="link-btn project-card__button"> Learn More</a>
                             <p className="read-time">{project.readtime}</p>
                         </div>
                     </div>

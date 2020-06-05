@@ -113,6 +113,25 @@
     @include respond(xs){
         border-right: solid 3rem $color-primary-1;
         border-left: solid 3rem $color-primary-1;
-        padding-bottom: 9rem;
       }
+}
+
+@mixin padding{
+    padding: 5rem;
+    @include respond(md){
+        padding: 3rem;
+    }
+    @include respond(xs){
+        padding: 2.5rem 2rem;
+    }
+}
+
+@mixin default-margin{
+    margin-bottom: 5rem;
+    @include respond(md){
+        margin-bottom: 4rem;
+    }
+    @include respond(xs){
+        margin-bottom: 3rem;
+    }
 }

@@ -14,7 +14,8 @@ export default class DisplayVideo extends Component {
                                 encrypted-media; 
                                 gyroscope; 
                                 picture-in-picture" 
-                            allowFullScreen>
+                            allowFullScreen
+                            title={this.props.content.video}>
                         </iframe>
                     </div>
                 </div>

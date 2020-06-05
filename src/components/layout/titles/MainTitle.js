@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class MainTitle extends Component {
     constructor(props) {
@@ -26,9 +26,9 @@ export class MainTitle extends Component {
         const title = this.props.mainTitle;
         return(
         <div className="main-title__title-box">
-            <h1 className="main-title__title--name">
-                {title.name}
-            </h1>
+            <h1 className="main-title__title--name">{title.name}</h1>
+
+            
             <div className="main-title__title--slash"></div>
             <h2 className="main-title__title--job">
                 {title.descriptor}
@@ -52,8 +52,8 @@ export class MainTitle extends Component {
         const title = this.props.mainTitle;
         return(
             <div className="main-title__btn-box">
-                <a href="../assets/profile/resume.pdf" download className={"link-btn link-btn--accent-2 main-title__btn " + title.display}>Resum&eacute;</a>
-                <a href="https://www.linkedin.com/in/kevin-laird-ab2090150/" target="_blank" className={"link-btn link-btn--accent-2 main-title__btn " + title.display} rel="noopener noreferrer">LinkedIn</a>
+                <a href="../assets/profile/resume.pdf" download className={"link-btn main-title__btn " + title.display}>Resum&eacute;</a>
+                <a href="https://www.linkedin.com/in/kevin-laird-ab2090150/" target="_blank" className={"link-btn main-title__btn " + title.display} rel="noopener noreferrer">LinkedIn</a>
             </div>
         )
         

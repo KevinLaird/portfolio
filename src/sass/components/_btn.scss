@@ -12,6 +12,7 @@
     width: 100%;
     transition: all .2s;
     text-align: center;
+    display: block;
     &--primary-1{
         background-color: $color-primary-3;
         &:hover{

@@ -259,11 +259,9 @@ export default class Introspect extends Component {
                 {/* INTRO */}
                 <MainTitle mainTitle = {this.state.mainTitle} />
                 <section>
-                    <div className="displayImage__layout">
                         <DisplayImage displayImage = {this.state.whatIs} />
                         <DisplayImage displayImage = {this.state.soWhat} />
                         <DisplayImage displayImage = {this.state.selfReflection} />
-                    </div>
                 
                 <DisplayVideo content = {this.state.introVideo} />
 
@@ -293,7 +291,7 @@ export default class Introspect extends Component {
                     <div className="carousel__title-box">
                         <h1 className="carousel__title introspect__program--title">Program in Action</h1>
                     </div>
-                    <iframe className="introspect__program" src="https://introspect-imd.firebaseapp.com/#/" frameborder="0"></iframe>
+                    <iframe title="Introspect Program" className="introspect__program" src="https://introspect-imd.firebaseapp.com/#/" frameBorder="0"></iframe>
                 </div>
                 </section>
 

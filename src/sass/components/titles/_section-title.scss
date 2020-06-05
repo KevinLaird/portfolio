@@ -1,4 +1,7 @@
 .section-title{
+    animation: moveInBottom .6s;
+    animation-fill-mode: backwards;
+    animation-delay: .9s;
     &__title{
     color: $color-grey-a-1;
     font-size: 3.6rem;

@@ -2,15 +2,13 @@
     &-box{
         box-shadow: $shadows-1;
         background-color: #fff;
-        margin-bottom: 5rem;
-        padding: 5rem;
+        @include default-margin;
         padding-top: 0;
-        border-right: solid 5rem $color-primary-1;
-        border-left: solid 5rem $color-primary-1;
+        @include borders;
+        @include padding;
         @include respond(xs){
-          border-right: solid 3rem $color-primary-1;
-          border-left: solid 3rem $color-primary-1;
-          padding-bottom: 9rem;
+          padding-bottom: 8rem;
+          padding-top: 0;
         }
     }
     &__title{

@@ -15,15 +15,17 @@
         
 
         &-box{
-            margin: 4rem 4rem;
+            margin: 4rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-            grid-column-gap: 7.5rem;
-            grid-row-gap: 3rem;
+            grid-gap: 3rem;
+            @include respond(xs){
+                margin: 3rem 1rem;
+            }
         }
     }
     &__section{
-        margin-bottom: 4rem;
+        @include default-margin;
     }
     
 }
@@ -38,35 +40,67 @@
     height: 100%;
     width: 100%;
     border-left: solid 1rem $color-primary-1;
-    border-right: solid 30rem $color-primary-1;
+    border-right: solid 29.7rem $color-primary-1;
     @include respond(md){
-        border-right: solid 20rem $color-primary-1;
+        border-right: solid 4rem $color-primary-1;
+        border-left: solid 4rem $color-primary-1;
+        padding: 3.6rem 2.8rem
     }
     @include respond(xs){
-        border-right: solid 10rem $color-primary-1;
+        border-left: solid 1rem $color-primary-1;
+        border-right: solid 1rem $color-primary-1;
     }
     &__title{
+        
         &-box{
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
         }
         &--sub{
             color: $color-grey-a-3;
+            @include respond(md){
+                font-size: 1.8rem;
+            }
             &-box{
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
-                grid-gap: 1.5rem;
+                grid-template-columns: repeat(auto-fit, minmax(17rem, max-content));
+                grid-gap: 2.5rem;
             }
         }
     }
+    &--title{
+        font-size: 3.6rem;
+    }
 
-    &__button-box{
-        display: flex;
+    &__button{
+        background-color: $color-primary-1;
+        transition: all .2s;
+        &:hover{
+            background-color: $color-accent-2;
+            transform: translateY(-2px);
+        }
+        &:focus{
+            background-color: $color-accent-1;
+            transform: translateY(1px);
+        }
+        @include respond(md){
+            font-size: 2.2rem;
+        }
+        &-box{
+            display: flex;
+        }
+        
     }
     &__list{
         list-style-type: none;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 2rem;
+        @include respond(md){
+            grid-gap: 3rem;
+        }
+        @include respond(xs){
+            grid-gap: 5rem;
+        }
         &--title{
             width: 16.2rem;
             height: 15.9rem;
@@ -76,13 +110,24 @@
         }
 
         &--content{
-            margin: 4rem 0;
+            margin-top: 0;
+            margin-bottom: 4rem;
         }
 
         &-item{
             & h3{
                 margin-bottom: 2rem;
                 color: $color-primary-1;
+            }
+            &--title{
+                @include respond(md){
+                    font-size: 2.4rem;
+                }
+            }
+            &--body{
+                @include respond(md){
+                    font-size: 1.8rem;
+                }
             }
         }
     }   
@@ -117,5 +162,8 @@
 
 .read-time{
     font-size: 1.2rem;
-    margin-top: 1.2rem;
+    margin-top: .6rem;
+    @include respond(md){
+        font-size: 1.6rem;
+    }
 }

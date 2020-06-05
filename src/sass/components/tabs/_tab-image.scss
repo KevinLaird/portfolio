@@ -1,8 +1,8 @@
 .tab-image{
     &-box{
         @include borders;
-        padding: 5rem;
-        margin-bottom: 5rem;
+        @include padding;
+        @include default-margin;
         box-shadow: $shadows-1;
     }
     &__descriptor{
@@ -27,6 +27,9 @@
             font-family: lato;
             color: $color-grey-a-1;
             font-size: 1.8rem;
+            @include respond(xs){
+                font-size: 2.2rem;
+            }
         }
     }
     &__selector{
@@ -88,6 +91,9 @@
         font-size: 1.8rem;
         border-top: solid 0.6rem $color-primary-4;
         padding-top: 1.5rem;
+        @include respond(xs){
+            font-size: 2.2rem;
+        }
         &-box{
             margin-bottom: 2.5rem;
         }

@@ -11,15 +11,11 @@
     &-box{
         background-color: #fff;
         box-shadow: $shadows-1;
-        border-right: 5rem solid $color-primary-1;
-        border-left: 5rem solid $color-primary-1;
-        padding: 5rem;
         margin-bottom: 5rem;
         width: 100%;
-        @include respond(xs){
-            border-right: 3rem solid $color-primary-1;
-            border-left: 3rem solid $color-primary-1; 
-        }
+        @include padding;
+        @include borders;
+        @include default-margin;
     }
     
 }

@@ -9,7 +9,7 @@ export default class ProfileCommenter extends Component {
 
         const profileComment = (
             comment.map((profile, index) => (
-                <div key={index} className="profile-comment__item">
+                <div key={`${index}-profile-${profile.title}`} className="profile-comment__item">
                     <div className="profile-comment__item--profile">
                         <img className="profile-comment__item--profile-img" src={ profile.image } alt={ profile.title }></img>
                         <div className="profile-comment__item--title-box">
@@ -18,7 +18,7 @@ export default class ProfileCommenter extends Component {
                         </div>
                     </div>
                     {profile.testimony.map(p => (
-                        <p key={index} className="profile-comment__comment">
+                        <p key={`${index}-comment-${p}`} className="profile-comment__comment">
                             {p}
                         </p> 
                     ))}

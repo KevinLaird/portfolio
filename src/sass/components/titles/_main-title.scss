@@ -14,6 +14,7 @@
         }
         @include respond(xs){
             margin-top: 3rem;
+            grid-gap: 0;
         }
     }
     
@@ -23,7 +24,7 @@
         }
         &--name{
             font-size: 5.8rem;
-            
+
             @include respond(md){
                 font-size: 4.8rem;
             }
@@ -58,6 +59,7 @@
             align-items: flex-end;
             color: $color-grey-a-1;
             margin-bottom: 6rem;
+            animation: moveInTop 1.2s cubic-bezier(0.33, 1, 0.68, 1);
             @include respond(md){
                 display: inline-block;
             }
@@ -73,11 +75,10 @@
         &-box{
             position: relative;
             margin-bottom: 2.5rem;
-            transition: all .2s;
             height: -webkit-fill-available;
-            &:hover{
-                transform: translateZ(0) scale(1.01);
-            }
+            animation: moveInBottom .6s;
+            animation-delay: .3s;
+            animation-fill-mode: backwards;
         }
     }
 
@@ -90,6 +91,9 @@
         right: -1.5rem;
         &--primary{
             @include color-gradient-primary-1;
+        }
+        @include respond(xs){
+            display: none;
         }
     }
 
@@ -114,6 +118,19 @@
     &__btn {
         font-size: 2rem;
         padding: 1.6rem 4rem;
+        animation: moveInBottom .6s;
+        animation-delay: .7s;
+        animation-fill-mode: backwards;
+        background-color: $color-primary-1;
+        transition: all .2s;
+        &:hover{
+            transform: translateY(-2px);
+            background-color: $color-accent-2;
+        }
+        &:focus{
+            transform: translateY(1px);
+            background-color: $color-accent-1;
+        }
         @include respond(md){
             &:not(:last-child){
                 margin-right: 2rem;
@@ -142,9 +159,11 @@
         width: 30rem;
         height: 30rem;
         display: flex;
-        transition: rotate .8s;
+        animation: fadeIn .6s cubic-bezier(0.36, 0, 0.66, -0.56);
+        animation-fill-mode: backwards;
+        transition: hover rotate .8s;
         &:hover .main-title__image__background{
-            transform: 
+            transform:
                 rotate(360deg)
                 scale(1.1);
         }
@@ -155,6 +174,7 @@
 
         @include respond(sm){
             justify-content: center;
+            align-items: center;
         }
     }
 
@@ -201,6 +221,7 @@
         }
         @include respond(xs){
             margin-bottom: 0;
+            grid-gap: 0;
         }
         
     }
