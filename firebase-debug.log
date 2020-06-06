@@ -1,0 +1,35 @@
+[debug] [2020-06-06T16:47:11.988Z] ----------------------------------------------------------------------
+[debug] [2020-06-06T16:47:11.990Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-06-06T16:47:11.990Z] CLI Version:   7.14.0
+[debug] [2020-06-06T16:47:11.990Z] Platform:      darwin
+[debug] [2020-06-06T16:47:11.990Z] Node Version:  v10.16.1
+[debug] [2020-06-06T16:47:11.992Z] Time:          Sat Jun 06 2020 09:47:11 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-06-06T16:47:11.992Z] ----------------------------------------------------------------------
+[debug] [2020-06-06T16:47:11.992Z] 
+[debug] [2020-06-06T16:47:12.007Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-06T16:47:12.007Z] > authorizing via signed-in user
+[debug] [2020-06-06T16:47:12.007Z] [iam] checking project portfolio-68c52 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-06-06T16:47:12.009Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-06-06T16:47:12.009Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-06-06T16:47:12.826Z] <<< HTTP RESPONSE 200
+[debug] [2020-06-06T16:47:12.841Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-68c52:testIamPermissions  
+
+[debug] [2020-06-06T16:47:13.639Z] <<< HTTP RESPONSE 200
+[debug] [2020-06-06T16:47:13.641Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-68c52  
+ 
+[debug] [2020-06-06T16:47:14.408Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-68c52'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-06-06T16:47:14.412Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/portfolio-68c52/versions  
+
+[debug] [2020-06-06T16:47:15.804Z] <<< HTTP RESPONSE 200
+[info] i  hosting[portfolio-68c52]: beginning deploy...
+[info] i  hosting[portfolio-68c52]: found 79 files in build
+[debug] [2020-06-06T16:47:16.065Z] [hosting] hash cache [YnVpbGQ] stored for 79 files
+[debug] [2020-06-06T16:47:16.065Z] [hosting][hash queue][FINAL]
+[debug] [2020-06-06T16:47:16.065Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/portfolio-68c52/versions/64d4ad2e80bee7d8:populateFiles  
+ <request body omitted>
+[debug] [2020-06-06T16:47:17.356Z] <<< HTTP RESPONSE 200

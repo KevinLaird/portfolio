@@ -1,0 +1,101 @@
+.loading{
+    z-index: 100;
+    &__box{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        @include respond(md){
+
+        }
+        &--right{
+            right: 0;
+            bottom: 0;
+            clip-path: polygon(100% 50%, 75% 100%, 100% 100%);
+            @include respond(md){
+                clip-path: polygon(90% 0, 100% 0, 100% 100%, 90% 100%);
+            }
+            
+
+        }
+        &--left{
+            top: 0;
+            left: 0;
+            clip-path: polygon(25% 0, 0 50%, 0 0);
+            @include respond(md){
+                clip-path: polygon(0 0, 10% 0, 10% 100%, 0 100%);
+            }
+        }
+    }
+    &__content-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+    &__error{
+        font-size: 7.6rem;
+        color: $color-semantic-a-1;
+        text-align: center;
+        @include respond(lg){
+            font-size: 5.4rem;
+        }
+        &-box{
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+    }
+    &__load{
+        font-size: 5.6rem;
+        color: $color-primary-1;
+        text-align: center;
+        font-weight: 600;
+        &--content{
+            margin-left: 1rem;
+        }
+    }
+    &__button{
+        background-color: $color-primary-1;
+        border: none;
+        color: $color-primary-5;
+        font-size: 4.6rem;
+        padding: 1.5rem 10rem;
+        transition: all .2s;
+        &:hover{
+            transform: translateY(-2px);
+            background-color: $color-semantic-a-1;
+        }
+        &:focus{
+            transform: translateY(1px);
+            background-color: $color-semantic-a-2;
+        }
+        &-box{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__spinner{
+        animation: spin 5000ms infinite;
+        animation-timing-function: linear;
+    }
+}
+
+.loading__button, 
+.loading__button:focus,
+.loading__button:active{
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.loading__box--right, .loading__box--left{
+    position: absolute;  
+    z-index: 101;
+    background-color: $color-semantic-a-1; 
+    width: inherit;
+    height: inherit;    
+    @include respond(xs){
+        display: none;
+    }
+}

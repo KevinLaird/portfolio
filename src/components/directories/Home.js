@@ -102,6 +102,7 @@ export default class Home extends Component {
     render() {
         return (
         <div>
+          
         <Navbar />
             <Sources />
             <section className="projects__section">  
