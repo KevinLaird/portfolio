@@ -24,7 +24,7 @@ export default class DisplayImage extends Component {
     };
 
     title() {
-        const display = this.props.displayImage;
+        const display = this.props.content;
         return(
             <div className="display-image__title-box">
                 <h1 className={display.design + " display-image__title"}>{display.title}</h1>
@@ -33,7 +33,7 @@ export default class DisplayImage extends Component {
         )
     }
     image() {
-        const display = this.props.displayImage;
+        const display = this.props.content;
         return (
             <div className="display-image__image-box">
                 <img className = "display-image__image" src={display.img} alt={display.imgAlt}/>
@@ -43,19 +43,19 @@ export default class DisplayImage extends Component {
     
 
     render() {
-        const display = this.props.displayImage;
+        const display = this.props.content;
         const isDesktop = this.state.isDesktop;
 
-        let displayImage;
+        let content;
         if(display.orientation === true && isDesktop){
-            displayImage = (
+            content = (
                 <div className = {"display-image__background display-image__layout"}>
                     {this.image()}
                     {this.title()}
                 </div>
             )
         } else{
-            displayImage =(
+            content =(
                 <div className = {"display-image__background display-image__layout"}>
                     {this.title()}
                     {this.image()}
@@ -64,7 +64,7 @@ export default class DisplayImage extends Component {
             
         }
         
-        return (displayImage)
+        return (content)
     }
 }
 

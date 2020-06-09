@@ -36,12 +36,12 @@
         color: $color-primary-5;
         &-box{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
             grid-gap: 2.5rem;
             margin-bottom: 2.5rem;
         }
         &-tab{
-            padding: 1.8rem 7.2rem;
+            padding: 1.8rem 4.2rem;
             @include respond(md){
                 padding: 1.6rem 1.2rem;
             }

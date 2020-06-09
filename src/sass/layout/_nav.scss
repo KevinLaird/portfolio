@@ -9,7 +9,7 @@
         display: flex;
         justify-content: flex-end;
         &:last-child{
-            margin-right: 6rem;
+            margin-right: 5rem;
             @include respond(md){
                 margin-right: 2rem;
             }
@@ -20,6 +20,18 @@
         justify-content: center;
         position: relative;
         
+    }
+    &--active{
+        background-color: $color-accent-1;
+        &:focus{
+            animation: shake .4s;
+            background-color: $color-accent-1 !important;
+            color: #fff !important;
+        }
+        &:hover{
+            background-color: $color-accent-1 !important;
+            color: #fff !important;
+        }
     }
 
     &__link{

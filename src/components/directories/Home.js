@@ -7,18 +7,20 @@ import Sources from '../sources/Sources';
 
 export default class Home extends Component {
     state = {
+        nav: { home: "nav--active" },
         projects: [
           {
             
             title: 'Hostwinds',
-            type: 'Web Hosting',
+            type: 'Web Hosting - Employer',
             role: 'Web Host Support Agent',
             time: "2020 • 4 Months",
             mission: 'Ensure quality support and hosting services to clients all around the world',
             task: 'Communicate and assist clients to better sell our products.',
             action: 'Created a welcoming environent for returning and newcoming clients by answering their pertinent questions and assisting them with finding the right product(s) that best fits their wants and needs.',
             result: '//',
-            readtime: '*5 minute read'
+            readtime: '*5 minute read',
+            cta: "/hostwinds"
           },
           {
             title: 'IntroSpect',
@@ -42,7 +44,8 @@ export default class Home extends Component {
             task: 'Go through the design curriculum provided by the firm to improve my understanding of great game design.',
             action: 'Produced over 40 pages of notes and provided in-depth analyses of my experiences.',
             result: 'Presented the art installation to hundreds of guests, creating a lasting impact on both the visitors and the University of Washington.',
-            readtime: '*5 minute read'
+            readtime: '*5 minute read',
+            cta: "/dfl"
           },
           {
             title: 'Wing Luke',
@@ -53,14 +56,15 @@ export default class Home extends Component {
             task: 'Collect user research using different research methods to find solutions to visitor wants and needs.',
             action: 'Conducted visual and verbal surveys at the Wing Luke Museum.',
             result: 'Provided a 23 page report for the client regarding the research collected and potential solutions to the problem set. Our client utilized many of the solutions or recommendations in our report.',
-            readtime: '*5 minute read'
+            readtime: '*5 minute read',
+            cta: "/wing"
           },
           {
             
-            title: 'Corpromise',
-            type: 'Board Game',
-            role: 'Game Designer',
-            time: "2018 • 3 Months",
+            title: 'More Projects...',
+            type: 'Personal Development',
+            role: 'Developer/Designer',
+            time: "N/A",
             mission: 'Design a board game that analyzes climate change in a creative way.',
             task: 'Find my team\'s target audience, how to create game mechanics that are easy to use and engaging for that audience, and how to balance those systems to create a balanced and competitive setting.',
             action: '--',
@@ -103,7 +107,7 @@ export default class Home extends Component {
         return (
         <div>
           
-        <Navbar />
+        <Navbar nav = {this.state.nav} />
             <Sources />
             <section className="projects__section">  
                 <Projects content={this.state.projects} />

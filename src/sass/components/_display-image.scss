@@ -1,8 +1,8 @@
 .display-image{
     &__layout{
         @include default-margin;
-        animation: moveInBottom 1s;
-        animation-delay: .9s;
+        animation: moveInBottom .9s;
+        animation-delay: .6s;
         animation-fill-mode: backwards;
     }
     &__title{

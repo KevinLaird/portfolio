@@ -12,7 +12,7 @@ export class Projects extends Component {
               <TabList>
                 <div className="projects__links-box">
                     {project.map((project, index) => (
-                        <Tab key={`${index}-button-${project.title}`}>
+                        <Tab key={`${index}-button-${project.title}`} className={`projects__links--tab projects__links--${index + 1}`}>
                             <button className="projects__links"><p className="projects__links--content">{project.title}</p></button>
                         </Tab>
                     ))}

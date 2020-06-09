@@ -12,7 +12,12 @@ export default class SectionCard extends Component {
                 </div>
                 <div className="section-card__content">
                     <h3 className="section-card__content-title">{card.contentTitle}</h3>
-                    <p className="section-card__content-paragraph">{card.contentParagraph}</p>
+                    {card.contentParagraph.map((item, index) => (
+                        <p key={`${card.title}-sectioncard-${index}`}className="section-card__content-paragraph">
+                            {item}
+                        </p>
+                    ))}
+                    
                 </div>
             </div>
         )

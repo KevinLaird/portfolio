@@ -1,8 +1,9 @@
-.title-with-content{
+.title-list{
     &__box{
         display: grid;
         grid-gap: 5rem;
-        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-column-gap: 10rem;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
         padding: 5rem;
         position: relative;
         @include respond(xs){
@@ -11,6 +12,8 @@
         }
     }
     &__item{
+        position: relative;
+        padding-left: 10rem
     }
     &__title{
         font-size: 3.6rem;
@@ -34,5 +37,13 @@
         @include respond(xs){
             font-size: 1.6rem;
         }
+    }
+    &__number{
+        position: absolute;
+        left: 0;
+        font-size: 14.4rem;
+        color: $color-grey-a-4;
+        line-height: initial;
+        font-weight: bold;
     }
 }

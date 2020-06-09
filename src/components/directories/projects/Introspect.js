@@ -60,7 +60,7 @@ export default class Introspect extends Component {
                 title: "the challenge",
                 subtitle: "high level issues",
                 contentTitle: "Create a visual interface that responds to brain wave data.",
-                contentParagraph: "Our goal was to create an art installation that  is intended to provide a deep self-reflective and meditative 5-minute journey for users interested in exploring their inner self."
+                contentParagraph: ["Our goal was to create an art installation that  is intended to provide a deep self-reflective and meditative 5-minute journey for users interested in exploring their inner self."]
             },
         challengeList: [
             {
@@ -81,13 +81,13 @@ export default class Introspect extends Component {
         ],
 
         // SOLUTIONS SECTION
-
+        // VISUALS
         solutionVisuals:
             {
                 title: "the solution",
                 subtitle: "visuals",
                 contentTitle: "Made visuals for the developer to create prototypes to test. ",
-                contentParagraph: "From the start we had an idea of what we wanted the art installation to be, but we had no idea how it might look like. To get an idea, we did extensive research into similar brain-computer interface art installations. We also researched different visual ideas that could symbolically connect to our intended experience such as: satellites, crown-shyness, mirrored cybernetic neural networks, and more."
+                contentParagraph: ["From the start we had an idea of what we wanted the art installation to be, but we had no idea how it might look like. To get an idea, we did extensive research into similar brain-computer interface art installations. We also researched different visual ideas that could symbolically connect to our intended experience such as: satellites, crown-shyness, mirrored cybernetic neural networks, and more."]
             },
 
         designGallery: {
@@ -104,27 +104,29 @@ export default class Introspect extends Component {
                     caption: "The participant will control a stream of wave-like patterns. The amplitude and magnitude as well as the coloration change depending on the participant’s mind state. The calming waters serve to be a conduit for the mind’s ocean of endless creativity and potential. The waters will be peaceful if the participant is focused and relaxed, if they aren’t, the ocean will become violent, dark, and frightening. This is the chosen prototype of the group, the Team's developer produced a working prototype that changes based on the brain-wave data."
                 },
                 {
-                    selector: "Strands",
+                    selector: "Cosmic",
                     image: "../assets/project/introspect/cosmic.png",
                     alt: "vector",
                     fit: "tab-image__content--image--cover",
-                    caption: "The participant will control four individual strands each with a different coloration. These strands will engage in a type of dance where the participant can actively control how these strands interact with each other."
+                    caption: "The planets represent the dichotomy of the small, minute worlds of atoms and celestial bodies, the glowing orbs can be construed as either electrons or comets, while the planets can either represent the atom, or celestial planets. The participant controls these comets/atoms and paints these blank, \"tabula rasa\" planets filling it with the wonder of the participant's mind. These planets can also represent the dichotomy of the left and right hemispheres of the brain, the comets/electrons will orbit different planets depending on the participant's current mind state."
                 },
                 {
-                    selector: "Cosmic",
+                    selector: "Strands",
                     image: "../assets/project/introspect/strands.png",
                     alt: "vector",
                     fit: "tab-image__content--image--cover",
-                    caption: "The planets represent the dichotomy of the small, minute worlds of atoms and celestial bodies, the glowing orbs can be construed as either electrons or comets, while the planets can either represent the atom, or celestial planets. The participant controls these comets/atoms and paints these blank, \"tabula rasa\" planets filling it with the wonder of the participant's mind. These planets can also represent the dichotomy of the left and right hemispheres of the brain, the comets/electrons will orbit different planets depending on the participant's current mind state."
+                    caption: "The participant will control four individual strands each with a different coloration. These strands will engage in a type of dance where the participant can actively control how these strands interact with each other."
                 }
             ]
         },  
+
+        // TECHNOLOGY
         solutionTechnology:
             {
                 title: "the solution",
                 subtitle: "technology",
                 contentTitle: "Transformed data into a visually responsive interface.",
-                contentParagraph: "Each user’s brain produces varying brainwaves, dependent on genetics, what that person has eaten, how much sleep they got, their mood, etc. Creating a balanced yet unique experience to a huge variance in brain chemistry was the biggest challenge we could tackle. "
+                contentParagraph: ["Each user’s brain produces varying brainwaves, dependent on genetics, what that person has eaten, how much sleep they got, their mood, etc. Creating a balanced yet unique experience to a huge variance in brain chemistry was the biggest challenge we could tackle. "]
             },
         devPrototype:
             {
@@ -185,26 +187,15 @@ export default class Introspect extends Component {
                 }
             ]
         },
+
+        // LOCATION
+
         solutionLocation:
             {
                 title: "the solution",
                 subtitle: "location",
                 contentTitle: "Created a user-flow of the location and took photos.",
-                contentParagraph: "We knew we wanted the art installation to be located in one of the rooms at the University of Washington Bothell campus. We explored many different possibilities and finally found the perfect location."
-            },
-        locationMap:
-            {
-                title: "Location Map",
-                slider: [
-                    {
-                        image: "../assets/project/introspect/entrance.png",
-                        alt: "entrance"
-                    },
-                    {
-                        image: "../assets/project/introspect/exhibitDiagram1.png",
-                        alt: "Exhibit Flow"
-                    }
-                ]
+                contentParagraph: ["We knew we wanted the art installation to be located in one of the rooms at the University of Washington Bothell campus. We explored many different possibilities and finally found the perfect location."]
             },
         locationVideo: { video: "https://www.youtube.com/embed/mGcmPirkbm4" },
 
@@ -215,7 +206,7 @@ export default class Introspect extends Component {
                 title: "the result",
                 subtitle: null,
                 contentTitle: "Presented to HUNDREDS of visitors in a 3-hour timespan.",
-                contentParagraph: "One of the most memorable experiences during the art installation unveiling was that one person thanked us and was tearing up saying that it really helped with what they were going through."
+                contentParagraph: ["One of the most memorable experiences during the art installation unveiling was that one person thanked us and was tearing up saying that it really helped with what they were going through."]
             },
         perlin:
             {
@@ -229,6 +220,7 @@ export default class Introspect extends Component {
                         image: "../assets/project/introspect/perlin2.png",
                         alt: "Perlin Hands"
                     }
+                    
                 ]
                 
             },
@@ -243,6 +235,14 @@ export default class Introspect extends Component {
                     {
                         image: "../assets/project/introspect/final2.png",
                         alt: "Delve"
+                    },
+                    {
+                        image: "../assets/project/introspect/interact1.png",
+                        alt: "Interaction 1"
+                    },
+                    {
+                        image: "../assets/project/introspect/interact2.png",
+                        alt: "Interaction 2"
                     }
                 ]
             },
@@ -257,11 +257,11 @@ export default class Introspect extends Component {
                 <div className="pages-general">
 
                 {/* INTRO */}
-                <MainTitle mainTitle = {this.state.mainTitle} />
+                <MainTitle content = {this.state.mainTitle} />
                 <section>
-                        <DisplayImage displayImage = {this.state.whatIs} />
-                        <DisplayImage displayImage = {this.state.soWhat} />
-                        <DisplayImage displayImage = {this.state.selfReflection} />
+                <DisplayImage content = {this.state.whatIs} />
+                <DisplayImage content = {this.state.soWhat} />
+                <DisplayImage content = {this.state.selfReflection} />
                 
                 <DisplayVideo content = {this.state.introVideo} />
 
@@ -280,7 +280,6 @@ export default class Introspect extends Component {
 
                 {/* LOCATION */}
                 <SectionCard content = {this.state.solutionLocation} />
-                <Carousel content = {this.state.locationMap} />
                 <DisplayVideo content = {this.state.locationVideo} />
 
                 {/* END */}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class MainTitle extends Component {
+export default class MainTitle extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -23,7 +23,7 @@ export class MainTitle extends Component {
     };
 
     title(){
-        const title = this.props.mainTitle;
+        const title = this.props.content;
         return(
         <div className="main-title__title-box">
             <h1 className="main-title__title--name">{title.name}</h1>
@@ -37,7 +37,7 @@ export class MainTitle extends Component {
     )};
 
     image(){
-        const title = this.props.mainTitle;
+        const title = this.props.content;
         return(
             <div className="main-title__image-box">
                 <div className="main-title__image__background main-title__image__background--primary"></div>
@@ -49,7 +49,7 @@ export class MainTitle extends Component {
     };
 
     button() {
-        const title = this.props.mainTitle;
+        const title = this.props.content;
         return(
             <div className="main-title__btn-box">
                 <a href="../assets/profile/resume.pdf" download className={"link-btn main-title__btn " + title.display}>Resum&eacute;</a>
@@ -60,13 +60,13 @@ export class MainTitle extends Component {
     };
 
     content() {
-        const title = this.props.mainTitle;
+        const title = this.props.content;
         return(
             <div className="main-title__content-box">
                 <div className="main-title__underlay main-title__underlay--primary"></div>
                 <div className="main-title__paragraph-box main-title__paragraph-box--design">
                     {title.p.map((p, index) => (
-                        <p key={`${index}-main-title-${this.props.mainTitle}`} className={"main-title__paragraph " + title.size}>
+                        <p key={`${index}-main-title-${this.props.content}`} className={"main-title__paragraph " + title.size}>
                             {p}
                         </p> 
                     ))}
@@ -108,5 +108,3 @@ render() {
     }
 
 }
-
-export default MainTitle;

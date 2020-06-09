@@ -106,6 +106,22 @@
     text-decoration: none;
     background: none;
 }
+@mixin default-btn{
+    background-color: $color-semantic-b-2;
+    transition: all .2s;
+    &:hover{
+        background-color: $color-semantic-b-1;
+        transform: translateY(-2px);
+        box-shadow: $shadows-2;
+    }
+    &:focus{
+        background-color: $color-semantic-b-1;
+        transform: translateY(1px);
+    }
+    &:active{
+        transform: translateY(1px);
+    }
+}
 
 @mixin borders{
     border-right: solid 5rem $color-primary-1;
@@ -135,3 +151,4 @@
         margin-bottom: 3rem;
     }
 }
+
