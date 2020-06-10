@@ -1,0 +1,38 @@
+.section-title-2{
+    &__margin{
+        margin: 4rem 4rem 0;
+        @include respond(xs){
+            margin: 0;
+            margin-top: 3rem;
+        }
+    }
+    &__bg{
+        background-color: $color-theme;
+        box-shadow: $shadows-1;
+        padding: 3rem;
+        animation: moveInTop .6s;
+    }
+    &__content{
+        &-box{
+            display: flex;
+            &--left{
+                width: 28%;
+                margin-right: 4rem;
+            }
+            &--right{
+                width: 100%;
+                margin-left: 4rem;
+            }
+            &--design{
+                height: inherit;
+                background-color: $color-primary-1;
+            }
+        }
+        &--title{
+            font-size: 5.5rem;
+            color: $color-primary-1;
+            text-transform: uppercase;
+            min-width: max-content;
+        }
+    }
+}

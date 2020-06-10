@@ -27,6 +27,7 @@ export class Projects extends Component {
                             <p className="body-2 project-card__title--sub"><strong>Type:</strong> {project.type}</p>
                             <p className="body-2 project-card__title--sub"><strong>Role:</strong> {project.role}</p>
                             <p className="body-2 project-card__title--sub"><strong>Time:</strong> {project.time}</p>
+                            <p className="body-2 project-card__title--sub"><strong>Stakeholder:</strong> {project.stakeholder}</p>
                         </div>
                         <h1 className="h1 project-card--title">{project.title}</h1>
                     </div>

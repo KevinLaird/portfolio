@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default class Navbar extends Component {
     static defaultProps = {
         nav: {
-            home: ""
+            home: "",
         }
     }
     render() {

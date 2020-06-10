@@ -4,10 +4,15 @@ import ProfileComment from '../comments/ProfileComment';
 import Footer from '../layout/footer/Footer';
 import Navbar from '../layout/nav/Navbar';
 import Sources from '../sources/Sources';
+import SectionTitleV2 from '../layout/titles/SectionTitleV2';
 
 export default class Home extends Component {
     state = {
         nav: { home: "nav--active" },
+        projectTitle: { 
+          title: "my work", 
+          margin: "section-title-2__margin"
+        },
         projects: [
           {
             
@@ -15,18 +20,20 @@ export default class Home extends Component {
             type: 'Web Hosting - Employer',
             role: 'Web Host Support Agent',
             time: "2020 • 4 Months",
+            stakeholder: 'Hostwinds LLC',
             mission: 'Ensure quality support and hosting services to clients all around the world',
             task: 'Communicate and assist clients to better sell our products.',
-            action: 'Created a welcoming environent for returning and newcoming clients by answering their pertinent questions and assisting them with finding the right product(s) that best fits their wants and needs.',
+            action: 'Created a welcoming environent for returning and newcoming clients by answering their questions and assisting with website configuration.',
             result: '//',
             readtime: '*5 minute read',
             cta: "/hostwinds"
           },
           {
             title: 'IntroSpect',
-            type: 'Art Installation',
+            type: 'Art Installation - Educational',
             role: 'UI/UX Designer',
             time: "2019 • 6 Months",
+            stakeholder: 'University of Washington',
             mission: 'Create a user experience to visualize brainwave activity.Increase visitor return rate and improve user journey.',
             task: 'Made visual designs for the developer to rapidly create prototypes for the project.',
             action: 'Conducted visual research, competitive analyses, and brainwave-sensor research to create a resonant visual interface.',
@@ -38,8 +45,9 @@ export default class Home extends Component {
             
             title: 'SEED',
             type: 'Computer Game',
-            role: 'Level Designer',
+            role: 'Level Designer - Internship',
             time: "2019 • 6 Months",
+            stakeholder: 'Digital Future Lab',
             mission: 'Create thoughtful levels that challenges the player’s problem solving skills.',
             task: 'Go through the design curriculum provided by the firm to improve my understanding of great game design.',
             action: 'Produced over 40 pages of notes and provided in-depth analyses of my experiences.',
@@ -49,9 +57,10 @@ export default class Home extends Component {
           },
           {
             title: 'Wing Luke',
-            type: 'Case Study',
+            type: 'Case Study - Educational',
             role: 'UX Researcher',
             time: "2018 • 3 Months",
+            stakeholder: 'Wing Luke Museum',
             mission: 'Increase visitor return rate and improve user journey.',
             task: 'Collect user research using different research methods to find solutions to visitor wants and needs.',
             action: 'Conducted visual and verbal surveys at the Wing Luke Museum.',
@@ -59,18 +68,18 @@ export default class Home extends Component {
             readtime: '*5 minute read',
             cta: "/wing"
           },
-          {
+          // {
             
-            title: 'More Projects...',
-            type: 'Personal Development',
-            role: 'Developer/Designer',
-            time: "N/A",
-            mission: 'Design a board game that analyzes climate change in a creative way.',
-            task: 'Find my team\'s target audience, how to create game mechanics that are easy to use and engaging for that audience, and how to balance those systems to create a balanced and competitive setting.',
-            action: '--',
-            result: 'Created a board game that implements a balance between cooperation and competition.',
-            readtime: '*5 minute read'
-          }
+          //   title: 'More Projects...',
+          //   type: 'Personal Development',
+          //   role: 'Developer/Designer',
+          //   time: "N/A",
+          //   mission: 'Design a board game that analyzes climate change in a creative way.',
+          //   task: 'Find my team\'s target audience, how to create game mechanics that are easy to use and engaging for that audience, and how to balance those systems to create a balanced and competitive setting.',
+          //   action: '--',
+          //   result: 'Created a board game that implements a balance between cooperation and competition.',
+          //   readtime: '*5 minute read'
+          // }
         ],
 
         profiles: [
@@ -107,10 +116,11 @@ export default class Home extends Component {
         return (
         <div>
           
-        <Navbar nav = {this.state.nav} />
-            <Sources />
+        <Navbar nav = { this.state.nav } />
+            <SectionTitleV2 content = { this.state.projectTitle } />
             <section className="projects__section">  
-                <Projects content={this.state.projects} />
+            
+                <Projects content={ this.state.projects } />
             </section>
 
             <section className="references">

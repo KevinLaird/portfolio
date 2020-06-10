@@ -75,7 +75,7 @@ export default class About extends Component {
                 title: "BA Interactive Media Design",
                 subtitle: "University of Washington | September 2017 - June 2019",
                 content: [
-                    "With its interdisciplinary approach to interaction design and emphasis on studio practice, IMD enables students to develop creative solutions to complex problems."
+                    "Many times there is miscommunication within the tech industry between designers and developers. This major serves to bridge the gap between design and development by delivering an interdisciplinary approach, combining both STEM and IAS into one major."
                 ]
             },
             {
