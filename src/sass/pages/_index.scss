@@ -45,5 +45,8 @@
     &-box{
         background-color: #fff;
         box-shadow: $shadows-1;
+        animation: moveInBottom .6s;
+        animation-delay: 1.7s;
+        animation-fill-mode: backwards;
     }
 }

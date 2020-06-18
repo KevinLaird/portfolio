@@ -3,12 +3,11 @@ import Projects from '../projects/Projects';
 import ProfileComment from '../comments/ProfileComment';
 import Footer from '../layout/footer/Footer';
 import Navbar from '../layout/nav/Navbar';
-import Sources from '../sources/Sources';
 import SectionTitleV2 from '../layout/titles/SectionTitleV2';
 
 export default class Home extends Component {
     state = {
-        nav: { home: "nav--active" },
+        nav: { home: true },
         projectTitle: { 
           title: "my work", 
           margin: "section-title-2__margin"
@@ -44,8 +43,8 @@ export default class Home extends Component {
           {
             
             title: 'SEED',
-            type: 'Computer Game',
-            role: 'Level Designer - Internship',
+            type: 'Computer Game - Internship',
+            role: 'Level Designer',
             time: "2019 • 6 Months",
             stakeholder: 'Digital Future Lab',
             mission: 'Create thoughtful levels that challenges the player’s problem solving skills.',
@@ -116,7 +115,7 @@ export default class Home extends Component {
         return (
         <div>
           
-        <Navbar nav = { this.state.nav } />
+        <Navbar content = { this.state.nav } />
             <SectionTitleV2 content = { this.state.projectTitle } />
             <section className="projects__section">  
             

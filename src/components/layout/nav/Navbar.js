@@ -1,37 +1,87 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import NavbarDropdown from './NavbarDropdown';
 
 
 export default class Navbar extends Component {
-    static defaultProps = {
-        nav: {
-            home: "",
-        }
+    state= {
+        animation: ''
     }
+    static defaultProps = {
+        content: {
+            home: false,
+            about: false
+        }    
+    }
+
+    home(){
+        if(this.props.content.home){ 
+        return(
+            <li className="nav__item" onClick={this.startStopAnimation}>
+                <Link to='/' className={`nav__link h2 nav--active ${this.state.animation}`}>
+                    Home
+                </Link>
+            </li>
+        )}
+        return(
+            <li className="nav__item">
+                <Link to='/' className={`nav__link h2 `}>
+                    Home
+                </Link>
+            </li>
+        )
+    }
+
+    about(){
+        if(this.props.content.about){
+            return(
+                <li className="nav__item" onClick={this.startStopAnimation}>
+                    <Link to='/about' className={`nav__link h2 nav--active ${this.state.animation}`}>
+                        About
+                    </Link>
+                </li>
+            )
+        }
+        return(
+            <li className="nav__item">
+                <Link to='/about' className={`nav__link h2`}>
+                    About
+                </Link>
+            </li>
+        )
+    }
+
+
+    startStopAnimation = () => {
+        const { animation } = this.state;
+
+        this.setState({ 
+            animation: animation ? "" : "nav--animation"
+        })
+    }
+
+
     render() {
-        const item = this.props.nav;
+        const nav = this.props.content;
         
-        const nav = (
+        const content = (
             <nav className="nav">
-                <div className="nav__copyright">
-                    <p className="h2">Kevin Laird<span className="h4 nav__copyright-special">/UX Designer</span></p>
+                <div className="nav__copyright-box">
+                    <Link to='/' className="nav__copyright h2">
+                        Kevin Laird
+                        <span className="h4 nav__copyright-special">/UX Designer</span>
+                    </Link>
+                    {/* <p href="/home" className="h2">Kevin Laird<span className="h4 nav__copyright-special">/UX Designer</span></p> */}
                 </div>
                 <ul className="nav__list">
-                    <li className="nav__item">
-                        <Link to='/' className={"nav__link h2 " + item.home}>
-                            Home
-                        </Link>
-                    </li>
+                    {this.home()}
+                    {this.about()}
+                    <NavbarDropdown />
                     
-                    <li className="nav__item">
-                        <Link to='/about' className={"nav__link h2 " + item.about}>
-                            About
-                        </Link>
-                    </li>
                 </ul>
             </nav>
             
         )
-        return (nav)
+        return ( content )
     }
 }

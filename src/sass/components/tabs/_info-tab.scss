@@ -39,6 +39,9 @@
         font-size: 2rem;
         font-family: lato;
         text-align: left;
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
         &--title{
             font-size: 3.2rem;
             color: $color-grey-a-1;

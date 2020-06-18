@@ -5,13 +5,15 @@ export default class TabImage extends Component {
 
 
 
-    caption( caption ) {
+    caption( content ) {
         if(this.props.content.caption) {
             return(
                 <div className="tab-image__caption-box">
-                    <p className="tab-image__caption"> { caption } </p>
+                    {content.map((item, index) => (
+                        <p key = {`content-${index}`} className="tab-image__caption"> { item } </p>
+                    ))}
+                    
                 </div>
-                
             );
         } return; 
     }

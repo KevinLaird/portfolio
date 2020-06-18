@@ -1,6 +1,6 @@
 .skill-card{
     &-box{
-        transition: all .2s;
+
         animation: moveInBottom .6s;
         animation-delay: 1s;
         animation-fill-mode: backwards;
@@ -9,7 +9,7 @@
             padding: 2rem 4rem;
         }
         &:hover{
-            transform: translateY(-10px) translateZ(0) scale(1.05);
+            transform: none;
         }
     }
     &__title{

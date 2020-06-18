@@ -12,8 +12,8 @@ export default class TitleList extends Component {
                     <h1 className="h1 title-list__title">{item.title}</h1>  
                     <h3 className="h3 title-list__subtitle">{item.subtitle}</h3>
                     {item.content.map((p, index) => (
-                        <div>
-                            <p className="p title-list__content" key={`${item.title}--paragraph--${index}`}>{p}</p>
+                        <div key={`${item.title}--paragraph--${index}`}>
+                            <p className="p title-list__content">{p}</p>
                         </div>
                     ))}
                     </div> 

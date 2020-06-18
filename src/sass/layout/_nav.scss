@@ -4,6 +4,7 @@
     background-color: $color-primary-1;
     position: sticky;
     z-index: 20000;
+    box-shadow: $shadows-1;
     top: 0;
     &__list{
         display: flex;
@@ -24,7 +25,6 @@
     &--active{
         background-color: $color-accent-1;
         &:focus{
-            animation: shake .4s;
             background-color: $color-accent-1 !important;
             color: #fff !important;
         }
@@ -32,6 +32,9 @@
             background-color: $color-accent-1 !important;
             color: #fff !important;
         }
+    }
+    &--animation{
+        animation: shake .4s;
     }
 
     &__link{
@@ -60,6 +63,9 @@
             letter-spacing: inherit;
             border: none;
             line-height: inherit;
+            &:focus{
+                background-color: $color-primary-2;
+            }
             
         }
         &:hover{
@@ -77,14 +83,21 @@
     }
 
     &__copyright{
+        text-decoration: none;
+        color: $color-theme;
         position: absolute;
-        display: flex;
-        align-items: center;
         left: 5rem;
         top: 1.7rem;
-        color: #fff;
         @include respond(xs){
-            left: 3rem;
+            left: 2rem;
+            
+        }
+        &-box{
+            position: relative;
+            display: flex;
+            align-items: center;
+            
+           
         }
         &-special{
             color: $color-accent-4;
@@ -99,6 +112,7 @@
         list-style-type: none;
         top: 100%;
         width: 100%;
+        box-shadow: $shadows-1;
 
     }
     &__link{
@@ -108,7 +122,7 @@
         color: #fff;
         text-decoration: none;
         font-size: 2.4rem;
-        padding: 1.6rem 3rem;
+        padding: 1.6rem 0;
         @include respond(md){
             font-size: 1.7rem;
         }
@@ -120,6 +134,9 @@
         &-icon{
             margin-left: 1rem;
         }
+    }
+    &__item{
+        border-top: 1px $color-primary-5 solid;
     }
 }
 

@@ -66,17 +66,19 @@ export default class Introspect extends Component {
             {
                 selector: "Visuals",
                 title: "High Level Issues - Visuals",
-                content: "Create resonant visuals to represent the continuous flow of the human mind."
+                content: ["Create resonant visuals to represent the continuous flow of the human mind."]
             },
             {
                 selector: "Technology",
                 title: "High Level Issues - Technology",
-                content: "Each human brain produces different data. Normalizing that data to create a maintainable visual understanding and keeping it unique was critical."
+                content: ["Each human brain produces different data. Normalizing that data to create a maintainable visual understanding and keeping it unique was critical."]
             },
             {
                 selector: "Location",
                 title: "High Level Issues - Location",
-                content: "An interactive Art Installation requires a great location. After finding that location, we needed to reconfigure it to fit our vision."
+                content: [
+                    "An interactive Art Installation requires a great location. After finding that location, we needed to reconfigure it to fit our vision.",
+                ]
             },
         ],
 
@@ -91,7 +93,7 @@ export default class Introspect extends Component {
             },
 
         designGallery: {
-            title: "Designs",
+            title: "Exhibit Designs",
             content: [""],
             height: "tab-image__content--image-box--60",
             caption: true,
@@ -101,21 +103,21 @@ export default class Introspect extends Component {
                     image: "../assets/project/introspect/vector.png",
                     alt: "vector",
                     fit: "tab-image__content--image--cover",
-                    caption: "The participant will control a stream of wave-like patterns. The amplitude and magnitude as well as the coloration change depending on the participant’s mind state. The calming waters serve to be a conduit for the mind’s ocean of endless creativity and potential. The waters will be peaceful if the participant is focused and relaxed, if they aren’t, the ocean will become violent, dark, and frightening. This is the chosen prototype of the group, the Team's developer produced a working prototype that changes based on the brain-wave data."
+                    caption: ["The participant will control a stream of wave-like patterns. The amplitude and magnitude as well as the coloration change depending on the participant’s mind state. The calming waters serve to be a conduit for the mind’s ocean of endless creativity and potential. The waters will be peaceful if the participant is focused and relaxed, if they aren’t, the ocean will become violent, dark, and frightening. This is the chosen prototype of the group, the Team's developer produced a working prototype that changes based on the brain-wave data."]
                 },
                 {
                     selector: "Cosmic",
                     image: "../assets/project/introspect/cosmic.png",
                     alt: "vector",
                     fit: "tab-image__content--image--cover",
-                    caption: "The planets represent the dichotomy of the small, minute worlds of atoms and celestial bodies, the glowing orbs can be construed as either electrons or comets, while the planets can either represent the atom, or celestial planets. The participant controls these comets/atoms and paints these blank, \"tabula rasa\" planets filling it with the wonder of the participant's mind. These planets can also represent the dichotomy of the left and right hemispheres of the brain, the comets/electrons will orbit different planets depending on the participant's current mind state."
+                    caption: ["The planets represent the dichotomy of the small, minute worlds of atoms and celestial bodies, the glowing orbs can be construed as either electrons or comets, while the planets can either represent the atom, or celestial planets. The participant controls these comets/atoms and paints these blank, \"tabula rasa\" planets filling it with the wonder of the participant's mind. These planets can also represent the dichotomy of the left and right hemispheres of the brain, the comets/electrons will orbit different planets depending on the participant's current mind state."]
                 },
                 {
                     selector: "Strands",
                     image: "../assets/project/introspect/strands.png",
                     alt: "vector",
                     fit: "tab-image__content--image--cover",
-                    caption: "The participant will control four individual strands each with a different coloration. These strands will engage in a type of dance where the participant can actively control how these strands interact with each other."
+                    caption: ["The participant will control four individual strands each with a different coloration. These strands will engage in a type of dance where the participant can actively control how these strands interact with each other."]
                 }
             ]
         },  
@@ -130,7 +132,7 @@ export default class Introspect extends Component {
             },
         devPrototype:
             {
-                title: "Developer Prototypes",
+                title: "Exhibit Developer Prototypes",
                 content: ["These developer prototypes displayed on the left stemmed loosely from the design prototypes as well as previous similar programs my team member found. They were done close together and developed very fast. Ultimately, we decided to not proceed with any of these prototypes."],
                 caption: true,
                 height: "tab-image__content--image-box--60",
@@ -140,26 +142,26 @@ export default class Introspect extends Component {
                         image: "../assets/project/introspect/perlinNoise.png",
                         alt: "Perlin Noise",
                         fit: "tab-image__content--image--cover",
-                        caption: "Our developer loosely based this off of Ken Perlin's 1983 'Perlin Noise Gradient'. The color would take on an almost 'infrared' aesthetic and then would be projected on the body of the participant."
+                        caption: ["Our developer loosely based this off of Ken Perlin's 1983 'Perlin Noise Gradient'. The color would take on an almost 'infrared' aesthetic and then would be projected on the body of the participant."]
                     },
                     {
                         selector: "Light Trail",
                         image: "../assets/project/introspect/lightTrail.png",
                         alt: "Light Trail",
                         fit: "tab-image__content--image--cover",
-                        caption: "Trails of light would be created according to the brain wave data produced. The trail's intensity, speed, and acceleration are the main variables that would change."
+                        caption: ["Trails of light would be created according to the brain wave data produced. The trail's intensity, speed, and acceleration are the main variables that would change."]
                     },
                     {
                         selector: "Solar Cosmic",
                         image: "../assets/project/introspect/solar.png",
                         alt: "Solar Cosmic",
                         fit: "tab-image__content--image--cover",
-                        caption: "The celestial body's radiance, size, and speed would change based on the mind's brain wave data."
+                        caption: ["The celestial body's radiance, size, and speed would change based on the mind's brain wave data."]
                     }
                 ]
             },
         userData: {
-            title: "Example User Data",
+            title: "Brain User Data",
             content: [
                 "Each user’s mind is extremely different and had to be balanced with care to create a smooth and responsive journey through self-discovery."
             ],
@@ -173,7 +175,6 @@ export default class Introspect extends Component {
                     selector: "User 2",
                     image: "../assets/project/introspect/user2.png",
                     alt: "User 2",
-                    caption: "hi"
                 },
                 {
                     selector: "User 3",

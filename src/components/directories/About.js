@@ -8,7 +8,7 @@ import Footer from "../layout/footer/Footer";
 
 export default class About extends Component {
     state = {
-        nav: { about: "nav--active" },
+        nav: { about: true },
         mainTitle: 
             {
                 name: 'Kevin Laird',
@@ -99,7 +99,7 @@ export default class About extends Component {
     render() {
         return (
             <div>
-                <Navbar nav={ this.state.nav }/>
+                <Navbar content={ this.state.nav }/>
                 <div className="pages-general">
                 <MainTitle content = {this.state.mainTitle} />
                 <SectionTitle content = {this.state.skillsTitle} />
@@ -118,9 +118,7 @@ export default class About extends Component {
                         <div className="profile-comment--title-box">
                             <h1 className="h1 profile-comment--title">Education</h1>
                         </div>
-                    
-                        <TitleList content = {this.state.school}/> 
-                            
+                        <TitleList content = {this.state.school}/>  
                     </div>
                 </section>
             </div>
@@ -130,29 +128,3 @@ export default class About extends Component {
         )
     }
 }
-
-
-// bachelors:
-//             {
-//                 title: "BA Interactive Media Design",
-//                 subtitle: "University of Washington | September 2017 - June 2019",
-//                 content: [
-//                     "With its interdisciplinary approach to interaction design and emphasis on studio practice, IMD enables students to develop creative solutions to complex problems."
-//                 ]
-//             },
-//         associates:
-//             {
-//                 title: "Associates Arts & Science",
-//                 subtitle: "Bellevue College | September 2014 - December 2016",
-//                 content: [
-//                     "Utilized my High School’s “Running Start” program to create a broad understanding of context in design, a deep understanding in the Liberal Arts, and cultivate a pathway to grow and explore new areas of study."
-//                 ]
-//             },
-//         highschool:
-//             {
-//                 title: "High School Diploma",
-//                 subtitle: "Hazen High School | September 2012 - June 2015",
-//                 content: [
-//                     "Obtained a general education to provide a clear pathway to a higher education in the field of human computer interaction design."
-//                 ]
-//             }
