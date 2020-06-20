@@ -10,7 +10,7 @@
         @include button-reset;
         font-size: 3.6rem;
         text-align: center;
-        color: #fff;
+        color: $color-theme;
         &--content{
             font-weight: 500;
             &:hover{cursor: pointer;}
@@ -168,7 +168,7 @@
         top: 1rem;
         right: -29rem;
         z-index: 2;
-        background-image: url(../../assets/design/Exit/Exit.svg);
+        background-image: url(../../../assets/design/Exit/Exit.svg);
         background-position: center;
         background-repeat: no-repeat;
         object-fit: contain;

@@ -12,7 +12,7 @@
 }
 
 .default-card{
-    background-color: #fff;
+    background-color: $color-theme;
     box-shadow: $shadows-1;
     @include borders;
     padding: 5rem;

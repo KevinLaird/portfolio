@@ -1,7 +1,7 @@
 .carousel{
     &-box{
         box-shadow: $shadows-1;
-        background-color: #fff;
+        background-color: $color-theme;
         @include default-margin;
         padding-top: 0;
         @include borders;
@@ -176,7 +176,7 @@
       top: calc(50% - (0.5 * var(--control-button-height)));
       border: none;
       background-color: var(--control-button-background);
-      color: #fff;
+      color: $color-theme;
       cursor: pointer; }
       .awssld__controls button .awssld__controls__arrow-left,
       .awssld__controls button .awssld__controls__arrow-right {

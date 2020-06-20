@@ -5,7 +5,7 @@
     cursor: pointer;
     color: inherit;
     outline: none;
-    color: #fff;
+    color: $color-theme;
 }
 
 .link-btn{
@@ -23,7 +23,7 @@
     }
     &--primary-2{
         background-color: $color-primary-1;
-        color: #fff;
+        color: $color-theme;
         &:hover{
             background-color: $color-primary-2;
         }
@@ -37,7 +37,7 @@
     }
 
     &--accent-2{
-        color: #fff;
+        color: $color-theme;
         background-color: $color-accent-1;
         &:hover{
             background-color: $color-accent-2;

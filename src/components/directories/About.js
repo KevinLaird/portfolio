@@ -70,7 +70,9 @@ export default class About extends Component {
                 design: "semantic-b",
                 icon: "fas fa-microchip"
             },
-        school: [
+        school: {
+            mainTitle: "Education",
+            listItem: [
             {
                 title: "BA Interactive Media Design",
                 subtitle: "University of Washington | September 2017 - June 2019",
@@ -92,7 +94,7 @@ export default class About extends Component {
                     "Obtained a general education to provide a clear pathway to a higher education in the field of human computer interaction design."
                 ]
             }
-        ]
+        ]}
         
     }
     
@@ -114,12 +116,7 @@ export default class About extends Component {
                 </section>
 
                 <section>
-                    <div className="references-box">
-                        <div className="profile-comment--title-box">
-                            <h1 className="h1 profile-comment--title">Education</h1>
-                        </div>
-                        <TitleList content = {this.state.school}/>  
-                    </div>
+                    <TitleList content = {this.state.school}/>  
                 </section>
             </div>
                 

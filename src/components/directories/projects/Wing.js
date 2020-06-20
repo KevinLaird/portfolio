@@ -85,64 +85,71 @@ export default class Wing extends Component {
         },
         survey: {
             title: "Surveys",
-            content: [""],
             height: "tab-image__content--image-box--60",
             caption: true,
             tabs: [
                 {
                     selector: "Verbal Survey",
                     image: '../assets/project/wing/verbalSurvey.png',
-                    alt: "vector",
+                    alt: "Verbal Survey",
                     fit: "",
-                    caption: [""]
+                    caption: [
+                        "The Verbal Survey was intended for visitors that had plenty of time to give feedback on their overal experience.",
+                        "Goals: Collect in-depth data on ratings, expectations, and experience in different areas of the museum."
+                    ]
                 },
                 {
                     selector: "Interactive Survey",
                     image: "../assets/project/wing/visualSurvey.png",
-                    alt: "vector",
+                    alt: "Interactive Survey",
                     fit: "",
-                    caption: [""]
+                    caption: [
+                        "The Visual Survey was intended for visitors that were limited on time and could quickly point out what they noticed throughout their exploration of the museum and what they didn't notice.",
+                        "Goals: Generate data on what is easily visible to a general visitor."    
+                    ]
                 },
             ]
         },
         dataAnalysis: {
             title: "Data Analysis",
-            content: ["Our team focused on splitting up our annotation process into four parts"],
+            content: ["Our team focused on splitting up our annotation process into four parts."],
             height: "tab-image__content--image-box--60",
             caption: true,
             tabs: [
                 {
                     selector: "10/4 Field Notes",
                     image: '../assets/project/wing/verbalSurvey.png',
-                    alt: "vector",
+                    alt: "10/4 Field Notes",
                     fit: "",
-                    caption: [""]
+                    caption: ["Used color highlighting to group categories. When viewing the combined annotated documents, the key for the color highlights"]
                 },
                 {
                     selector: "10/13-14 Field Notes",
                     image: "../assets/project/wing/visualSurvey.png",
-                    alt: "vector",
+                    alt: "10/13-14 Field Notes",
                     fit: "",
                     caption: [""]
                 },
                 {
                     selector: "10/22 Survey Notes",
                     image: "../assets/project/wing/visualSurvey.png",
-                    alt: "vector",
+                    alt: "10/22 Survey Notes",
                     fit: "",
                     caption: [""]
                 },
                 {
                     selector: "AEIOU",
                     image: "../assets/project/wing/visualSurvey.png",
-                    alt: "vector",
+                    alt: "AEIOU",
                     fit: "",
                     caption: [""]
                 },
 
             ]
         },
-        findings: [
+        findings: {
+            mainTitle: "Findings",
+            listItem: [
             {
                 title: "Exterior Signage",
                 subtitle: "Layout Changes",
@@ -178,7 +185,7 @@ export default class Wing extends Component {
                     "Not many individuals were able to fully engage with the exhibits - they left either confused about where to begin or what was important to see. A potential recommendation would be to have a self-guided auditory phone app in different languages (focusing on Mandarin, Japanese, Korean, Taiwanese, etc.) to loosely help guide visitors through the museum."
                 ]
             }
-        ]
+        ]}
     }
     render() {
         return (
@@ -192,13 +199,7 @@ export default class Wing extends Component {
                     <Carousel content = {this.state.tour} />
                     <TabImage content = {this.state.survey} />
                     <TabImage content = {this.state.dataAnalysis} />
-
-                    <div className="references-box">
-                        <div className="profile-comment--title-box">
-                            <h1 className="h1 profile-comment--title">Findings</h1>
-                        </div>
-                        <TitleList content = {this.state.findings}/>  
-                    </div>
+                    <TitleList content = {this.state.findings}/>  
                 </div>
                 <Footer />
             </div>

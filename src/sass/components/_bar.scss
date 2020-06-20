@@ -13,11 +13,11 @@
     }
     &--blue{
         &-1{
-            color: #fff;
+            color: $color-theme;
             background-image: url(../../assets/design/bar/blue/1.png);
         }
         &-2{
-            color: #fff;
+            color: $color-theme;
             background-image: url(../../assets/design/bar/blue/2.png);
         } 
     }

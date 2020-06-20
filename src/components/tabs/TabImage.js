@@ -9,13 +9,32 @@ export default class TabImage extends Component {
         if(this.props.content.caption) {
             return(
                 <div className="tab-image__caption-box">
+                    <div className="tab-image__caption">
                     {content.map((item, index) => (
-                        <p key = {`content-${index}`} className="tab-image__caption"> { item } </p>
+                        <p key = {`content-${index}`} className="tab-image__caption--content"> { item } </p>
                     ))}
+                    </div>
+                    
                     
                 </div>
             );
         } return; 
+    }
+
+    tabTitle() {
+        const tab = this.props.content;
+
+        if(tab.content){
+            return( 
+                <div>
+                    {tab.content.map((item, index) => (
+                    <p key={`${index}-tab-${ item }`} 
+                       className="tab-image__descriptor--content">{ item }</p>
+                    ))}
+                </div>
+                
+            )
+        }
     }
 
 
@@ -28,10 +47,7 @@ export default class TabImage extends Component {
                     <div className="tab-image__descriptor--title-box">
                         <h2 className="tab-image__descriptor--title"> { tab.title } </h2>
                     </div>
-                    {tab.content.map((item, index) => (
-                        <p key={`${index}-tab-${item}`} 
-                           className="tab-image__descriptor--content">{item}</p>
-                    ))}
+                    {this.tabTitle()}
                 </div>
                 <Tabs>
                     <TabList>
@@ -49,7 +65,7 @@ export default class TabImage extends Component {
                             <TabPanel key={index}>
                                 {this.caption( item.caption )}
                                 <div className={"tab-image__content--image-box " + tab.height}>
-                                    <img className={"tab-image__content--image " + item.fit}
+                                    <img className={`tab-image__content--image ${item.fit}`}
                                         key = {`${index}-tab-${item.alt}`} 
                                         src={item.image} 
                                         alt={item.alt} />

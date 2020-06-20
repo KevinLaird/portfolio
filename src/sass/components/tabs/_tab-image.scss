@@ -27,6 +27,8 @@
             font-family: lato;
             color: $color-grey-a-1;
             font-size: 1.8rem;
+            box-shadow: $shadows-1;
+            padding: 2rem 1.5rem;
             @include respond(xs){
                 font-size: 2.2rem;
             }
@@ -51,6 +53,7 @@
         }
     }
     &__content{
+       
         &-box{
             &--40{
                 height: 40rem; 
@@ -87,15 +90,25 @@
     }
 
     &__caption{
-        font-family: lato;
-        font-size: 1.8rem;
-        border-top: solid 0.6rem $color-primary-4;
-        padding-top: 1.5rem;
-        @include respond(xs){
-            font-size: 2.2rem;
+        margin-top: 2rem;
+        padding: 2rem 1.5rem;
+        box-shadow: $shadows-1;
+        &--content{
+            font-family: lato;
+            font-size: 1.8rem;
+            
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+            @include respond(xs){
+                font-size: 2.2rem;
+            }
         }
+        
         &-box{
             margin-bottom: 2.5rem;
+            margin-top: 1.5rem;
+            border-top: solid 0.6rem $color-primary-4;
         }
     }
 }

@@ -14,7 +14,7 @@
         right: 0;
         clip-path: polygon(67% 0, 100% 0, 100% 100%);
         @include respond(sm){
-            background-color: #fff;
+            background-color: $color-theme;
             clip-path: polygon(72% 0, 100% 0, 100% 60%);
         }
     }
@@ -32,7 +32,7 @@
         }
     }
     &__subtitle{
-        color: #fff;
+        color: $color-theme;
         background-color: $color-primary-1;
     }
     &__content{

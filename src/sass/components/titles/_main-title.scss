@@ -108,7 +108,7 @@
             &--design{
                 box-shadow: $shadows-1;
                 color: $color-grey-a-2;
-                background-color: #fff;
+                background-color: $color-theme;
             }
         }
         @include respond(xs){

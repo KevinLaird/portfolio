@@ -1,5 +1,5 @@
 .sources{
-    background-color: #fff;
+    background-color: $color-theme;
     box-shadow: $shadows-1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -43,7 +43,7 @@
         margin: 0;
     }
     &-box{
-        background-color: #fff;
+        background-color: $color-theme;
         box-shadow: $shadows-1;
         animation: moveInBottom .6s;
         animation-delay: 1.7s;
