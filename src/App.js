@@ -21,6 +21,9 @@ const DFL = MyLoadable({
 const Hostwinds = MyLoadable({
   loader: () => import('./components/directories/projects/Hostwinds')
 })
+const Contact = MyLoadable({
+  loader: () => import('./components/directories/Contact')
+})
 
 function App(){
     return (
@@ -31,6 +34,7 @@ function App(){
           <Route exact path="/dfl" component={ DFL } />
           <Route exact path="/wing" component={ Wing } />
           <Route exact path="/hostwinds" component={ Hostwinds } />
+          <Route exact path="/contact" component={ Contact } />
           <Route exact path="/about" component={ About } />
         </Switch>
       </div> 

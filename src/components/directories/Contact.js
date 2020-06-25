@@ -1,7 +1,4 @@
-// import React, { Component } from 'react';
-// import Navbar from "../layout/nav/Navbar";
-// import ContactForm from "../forms/ContactForm";
-// import Footer from "../layout/footer/Footer";
+
 
 // export default class Contact extends Component {
 //     render() {
@@ -23,3 +20,17 @@
 //         )
 //     }
 // }
+
+import React, { Component } from 'react'
+import EmailForm from '../forms/email/EmailForm';
+
+export default class Contact extends Component {
+    render() {
+        return (
+            <div>
+                <EmailForm />
+            </div>
+        )
+    }
+}
+
