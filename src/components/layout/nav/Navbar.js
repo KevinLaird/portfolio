@@ -66,13 +66,12 @@ export default class Navbar extends Component {
         
         const content = (
             <nav className="nav">
-                <div className="nav__copyright-box">
                     <Link to='/' className="nav__copyright h2">
-                        Kevin Laird
-                        <span className="h4 nav__copyright-special">/UX Designer</span>
+                        <div className="nav__copyright-box">
+                            <div>Kevin Laird</div>
+                            <div className="h4 nav__copyright-special">/UX Designer</div>
+                        </div>
                     </Link>
-                    {/* <p href="/home" className="h2">Kevin Laird<span className="h4 nav__copyright-special">/UX Designer</span></p> */}
-                </div>
                 <ul className="nav__list">
                     {this.home()}
                     {this.about()}

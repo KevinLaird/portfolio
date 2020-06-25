@@ -1,0 +1,12 @@
+.basic-title{
+    font-size: 3.6rem;
+    color: $color-accent-1;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    padding-bottom: .6rem;
+    font-weight: 600;
+    border-bottom: solid .6rem $color-primary-2;
+    &__box{
+      display: flex;
+    }
+  }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import BasicTitle from '../layout/titles/BasicTitle';
 
 export default class TabImage extends Component {
 
@@ -44,9 +45,7 @@ export default class TabImage extends Component {
         const content = (
             <div className="tab-image-box">
                 <div className="tab-image__descriptor-box">
-                    <div className="tab-image__descriptor--title-box">
-                        <h2 className="tab-image__descriptor--title"> { tab.title } </h2>
-                    </div>
+                    <BasicTitle content = {tab.title} />
                     {this.tabTitle()}
                 </div>
                 <Tabs>

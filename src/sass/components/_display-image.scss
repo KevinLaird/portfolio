@@ -26,9 +26,7 @@
 
     &__image{
         object-fit: contain;
-        @include respond(md){
-            width: 80%;
-        }
+        width: 80%;
         @include respond(xs){
             width: 70%;
         }

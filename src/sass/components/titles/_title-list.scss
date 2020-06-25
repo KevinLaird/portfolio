@@ -2,10 +2,16 @@
     &__box{
         display: grid;
         grid-gap: 5rem;
-        grid-column-gap: 10rem;
+        grid-column-gap: 7rem;
         grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
         padding: 5rem;
         position: relative;
+
+        &--grid-3{
+            grid-gap: 3rem;
+
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
         @include respond(xs){
             padding: 3rem;
             grid-gap: 3rem;

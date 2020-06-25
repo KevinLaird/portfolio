@@ -10,7 +10,7 @@
         display: flex;
         justify-content: flex-end;
         &:last-child{
-            margin-right: 5rem;
+            margin-right: 4rem;
             @include respond(md){
                 margin-right: 2rem;
             }
@@ -86,21 +86,22 @@
         text-decoration: none;
         color: $color-theme;
         position: absolute;
-        left: 5rem;
-        top: 1.7rem;
+        left: 4rem;
+        top: 0;
+        height: 100%;
+
         @include respond(xs){
             left: 2rem;
             
         }
         &-box{
-            position: relative;
             display: flex;
-            align-items: center;
-            
-           
+            align-items: flex-end;
+            line-height: .6;
         }
         &-special{
             color: $color-accent-4;
+            min-width: max-content;
         }
     }
 }

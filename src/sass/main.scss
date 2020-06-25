@@ -10,11 +10,16 @@
 @import "components/titles/main-title";
 @import "components/titles/section-title";
 @import "components/titles/section-title-v2";
-@import "components/titles/title-with-content";
+@import "components/titles/title-list";
+@import "components/titles//basic-title";
+
 @import "components/profiles/profile-comments.scss";
 @import "components/tabs/react-tabs";
 @import "components/tabs/info-tab";
 @import "components/tabs/tab-image";
+
+@import "components/galleries/carousel";
+@import "components/galleries/basic-gallery";
 @import "components/ux/loading-component";
 @import "components/bar";
 @import "components/btn";
@@ -23,11 +28,12 @@
 @import "components/cards/skill-card";
 @import "components/display-image";
 @import "components/video";
-@import "components/carousel";
+
 
 @import "layout/default-layout";
 @import "layout/section-card";
 @import "layout/footer";
+@import "layout/grids";
 @import "layout/nav";
 @import "layout/title";
 @import "layout/center-border";

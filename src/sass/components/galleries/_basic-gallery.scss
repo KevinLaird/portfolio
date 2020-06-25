@@ -1,0 +1,10 @@
+.gallery-basic{
+    display: grid;
+    grid-gap: 5rem;
+    height: inherit;
+    &__image{
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+    }
+}

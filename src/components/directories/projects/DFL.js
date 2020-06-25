@@ -10,7 +10,9 @@ export default class DFL extends Component {
             descriptor: 'Level Designer',
             img: '../assets/project/dfl/bg-seed.jpg',
             imgAlt: 'Logo',
-            p: ['By combining psychology, neuroscience, and technology, my team and I were able to create a unique introspective moment for people to experience themselves.'],
+            p: [
+                "SEED is a twist on the tower defense genre: instead of asking players to prevent enemies from reaching the end of a path, SEED asks players to help gentle creatures navigate increasingly challenging paths."
+            ],
             display: "u-display-none",
             size: "u-title-2",
         }
@@ -19,8 +21,9 @@ export default class DFL extends Component {
         return (
             <div>
                 <Navbar />
-                <section className="pages-general">
+                <section className ="pages-general">
                 <MainTitle content = {this.state.mainTitle} />
+                
                 </section>
                 
                 <Footer />

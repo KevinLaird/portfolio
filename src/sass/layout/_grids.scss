@@ -1,0 +1,32 @@
+.grid{
+    &--2{
+        grid-template-columns: 1fr 1fr;
+        @include respond( xs ){
+            grid-template-columns: 1fr;
+        }
+    }
+    &--3{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        @include respond( xs ){
+            grid-template-columns: 1fr;
+        }
+    }
+    &--4{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        @include respond( md ){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include respond( xs ){
+            grid-template-columns: 1fr;
+        }
+    }
+    &--5{
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 2rem;
+        @include respond( md ){
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        }
+    }
+}

@@ -81,7 +81,6 @@ render() {
     return(
         <div>
         {isDesktop ? (
-          <div>
             <div className="main-title-box">
                 {this.image()}
                 <div className="main-title main-title__content">
@@ -90,7 +89,6 @@ render() {
                     {this.button()}
                 </div>
             </div>
-          </div>
         ) : (
           <div className="main-title-box">
               <div className="main-title__responsive">

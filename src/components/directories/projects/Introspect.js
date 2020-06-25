@@ -6,7 +6,7 @@ import DisplayImage from '../../display/DisplayImage';
 import SectionCard from '../../layout/section/SectionCard';
 import InfoTab from '../../tabs/InfoTab';
 import TabImage from '../../tabs/TabImage';
-import Carousel from '../../carousel/Carousel';
+import Carousel from '../../galleries/carousel/Carousel';
 import DisplayVideo from '../../display/DisplayVideo';
 
 

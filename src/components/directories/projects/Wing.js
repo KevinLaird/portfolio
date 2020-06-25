@@ -6,9 +6,9 @@ import DisplayImage from '../../display/DisplayImage';
 import SectionCard from '../../layout/section/SectionCard';
 import InfoTab from '../../tabs/InfoTab';
 import TabImage from '../../tabs/TabImage';
-import Carousel from '../../carousel/Carousel';
-import DisplayVideo from '../../display/DisplayVideo';
+import Carousel from '../../galleries/carousel/Carousel';
 import TitleList from '../../layout/titles/TitleList';
+import BasicGallery from '../../galleries/basicGalleries/BasicGallery';
 
 export default class Wing extends Component {
     state = {
@@ -57,7 +57,7 @@ export default class Wing extends Component {
                 title: "Ethnographic Interviews",
                 content: [
                     "Our third visit consisted of preparing survey questions. The survey questions were built to be answered between 5-8 minutes and a partner system: one individual the interviewer and the other a scribe. We formulated our questions into two sections:",
-                    "1) Verbal - with a total of eight questions and", 
+                    "1) Verbal - with a total of eight questions", 
                     "2) Interactive - where we created an interactive photo tri-fold board where individuals were to answer the question: “What did you notice?” We interviewed a total of 15 individuals."
                 ]
             },
@@ -111,42 +111,35 @@ export default class Wing extends Component {
             ]
         },
         dataAnalysis: {
-            title: "Data Analysis",
-            content: ["Our team focused on splitting up our annotation process into four parts."],
-            height: "tab-image__content--image-box--60",
-            caption: true,
-            tabs: [
+            mainTitle: "Data Analysis & Annotation",
+            listItem: [
                 {
-                    selector: "10/4 Field Notes",
-                    image: '../assets/project/wing/verbalSurvey.png',
-                    alt: "10/4 Field Notes",
-                    fit: "",
-                    caption: ["Used color highlighting to group categories. When viewing the combined annotated documents, the key for the color highlights"]
+                    title: "Color Coding",
+                    subtitle: "Used to group categories.",
+                    content: [
+                        "My team and I worked to combine all of our notes together and color coded them to better organize all of the information. "
+                    ]
                 },
                 {
-                    selector: "10/13-14 Field Notes",
-                    image: "../assets/project/wing/visualSurvey.png",
-                    alt: "10/13-14 Field Notes",
-                    fit: "",
-                    caption: [""]
+                    title: "Circles and Underlines",
+                    subtitle: "Used to group patterns and focus on areas to note.",
+                    content: [
+                        "We used circles to group up similar information and underlines to highlight key information. Some examples include: ",
+                        "'Visitor Map'",
+                        "'Lost or confused'",
+                        "'Challenging or difficult'"
+                    ]
                 },
                 {
-                    selector: "10/22 Survey Notes",
-                    image: "../assets/project/wing/visualSurvey.png",
-                    alt: "10/22 Survey Notes",
-                    fit: "",
-                    caption: [""]
+                    title: "Comments and Questions",
+                    subtitle: "Used to propose a high level summary on results.",
+                    content: [
+                        "These comments and questions served to create prompts for us to investigate different topics further. Additional questions using the notes gathered created a way to narrow potential cases to improve the overall experience."
+                    ]
                 },
-                {
-                    selector: "AEIOU",
-                    image: "../assets/project/wing/visualSurvey.png",
-                    alt: "AEIOU",
-                    fit: "",
-                    caption: [""]
-                },
-
             ]
         },
+
         findings: {
             mainTitle: "Findings",
             listItem: [
@@ -185,21 +178,107 @@ export default class Wing extends Component {
                     "Not many individuals were able to fully engage with the exhibits - they left either confused about where to begin or what was important to see. A potential recommendation would be to have a self-guided auditory phone app in different languages (focusing on Mandarin, Japanese, Korean, Taiwanese, etc.) to loosely help guide visitors through the museum."
                 ]
             }
-        ]}
+        ]},
+        findingsGallery: {
+            title: "Findings Cont'd",
+            grid: "--5",
+            images: [
+                "../assets/project/wing/findings1.png",
+                "../assets/project/wing/findings2.png",
+                "../assets/project/wing/findings3.png",
+                "../assets/project/wing/findings4.png",
+                "../assets/project/wing/findings5.png"
+            ]
+        },
+        personas: {
+            title: "Personas",
+            grid: "--2",
+            images: [
+                "../assets/project/wing/persona1.png",
+                "../assets/project/wing/persona2.png"
+            ]
+        },
+        colorCoding: {
+            title: "Color Coding - Feasible Solution",
+            grid: "--3",
+            images: [
+                "../assets/project/wing/color1.png",
+                "../assets/project/wing/color2.png",
+                "../assets/project/wing/color3.png",
+                "../assets/project/wing/color4.png",
+                "../assets/project/wing/color5.png",
+                "../assets/project/wing/color6.png",
+            ]
+        },
+        solutions: {
+            title: "Feasible Solutions",
+            subtitle: "",
+            contentTitle: "Solutions with little investment and great benefit.",
+            contentParagraph: ["My team and I wanted to give the Wing Luke options to improve their visitors' experience. Some solutions were simple, others more complex - after brainstorming over 100 ideas, we created two solution categories, 'Feasible' and 'Speculative'",
+                               "Feasible solutions are options for the Wing Luke to create simple solutions to improve the overall visitor experience. Speculative Solutions would require more investment, but would significantly improve the community aspect of the museum and its surroundings."
+                              ]
+        },
+        frontDesk: {
+            title: "Visit Follow Up - Feasible Solution",
+            grid: "",
+            images: [
+                "../assets/project/wing/deskFlow.png"
+            ]
+        },
+        followUp: {
+            title: "Visit Follow Up - Feasible Solution",
+            grid: "--2",
+            images: [
+                "../assets/project/wing/followUp1.png",
+                "../assets/project/wing/followUp2.png"
+            ]
+        },
+        speculative: {
+            title: "Speculative Solution",
+            subtitle: "Wing Luke Cafe",
+            contentTitle: "Solutions that require significant planning with a huge impact",
+            contentParagraph: ["Our group was inspired by the Seattle Art Museum and their cafe. As we spoke to visitors, we realize they had a great time exploring the exhibits. However, there was no place for them to feel like they can swing by again to relax, meet others or grab a drink. Additionally, there were many people who were walking outside past the Wing quickly looking through the glass but not compelled enough to walk in.",
+                               "With the cafe, this will allow museum visitors and potential visitors the opportunity to feel like they can enter anytime during open hours. We recommend the cafe include pieces of art placed in the museum, a small stage for open mics or book readings, and to serve traditional Asian refreshments and food (ex. Bubble tea, rice cake, etc.)."
+                              ]
+        },
+        cafe: {
+            title: "Wing Luke Cafe Storyboard",
+            grid: "--1",
+            images: [
+                "../assets/project/wing/cafeStoryboard.png"
+            ]
+        },
+        conclusion: {
+            title: "In Conclusion",
+            subtitle: "Solutions that help",
+            contentTitle: "I collected data, annotated it, and created solutions alongside my team.",
+            contentParagraph: ["Some of the solutions we presented to our stakeholder were soon implemented afterwards. The solutions being: color coding, front-desk regulation, and more accessible maps.",
+                                "I learned how to interact with a targeted audience, creating open-ended questions that effectively produced meaning to derive from, understanding responses and finding patterns in data, and finding solutions to root problems of superficial issues."
+                              ]
+        }
     }
     render() {
         return (
             <div>
                 <Navbar />
                 <div className="pages-general">
-                    <MainTitle content = {this.state.mainTitle} />
+                    <MainTitle    content = {this.state.mainTitle} />
                     <DisplayImage content = {this.state.observations} />
-                    <SectionCard content = {this.state.partner} />
-                    <InfoTab content = {this.state.researchMethods} />
-                    <Carousel content = {this.state.tour} />
-                    <TabImage content = {this.state.survey} />
-                    <TabImage content = {this.state.dataAnalysis} />
-                    <TitleList content = {this.state.findings}/>  
+                    <SectionCard  content = {this.state.partner} />
+                    <InfoTab      content = {this.state.researchMethods} />
+                    <Carousel     content = {this.state.tour} />
+                    <TabImage     content = {this.state.survey} />
+                    <TitleList    content = {this.state.dataAnalysis} />
+                    <TitleList    content = {this.state.findings}/>
+                    <BasicGallery content = { this.state.findingsGallery } />   
+                    <BasicGallery content = { this.state.personas } />
+                    <SectionCard  content = {this.state.solutions} />
+                    <BasicGallery content = { this.state.colorCoding } />
+                    <BasicGallery content = {this.state.frontDesk}/>
+                    <BasicGallery content = {this.state.followUp}/>
+                    <SectionCard  content = {this.state.speculative} />
+                    <BasicGallery content = {this.state.cafe} />
+                    <SectionCard  content = {this.state.conclusion} />
                 </div>
                 <Footer />
             </div>
