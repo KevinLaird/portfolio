@@ -16,6 +16,7 @@ export default class EmailForm extends Component {
         e.preventDefault();
 
         axios({
+            
             method: "POST", 
             url:"http://localhost:3002/send", 
             data:  this.state
@@ -69,6 +70,7 @@ export default class EmailForm extends Component {
                 {/* Submit */}
                 <button type="submit">Submit</button>
             </form>
+            
         )
     }
     onNameChange(event) {
